@@ -1,0 +1,119 @@
+13:23:24.554 [main] INFO  c.s.f.r.a.WorkerApplication  - Starting worker with id: '172.31.80.161', host: '172.31.80.161:5412', zkString: '172.31.168.30:2181'
+13:23:25.424 [worker-akka.actor.default-dispatcher-2] INFO  a.e.s.Slf4jLogger  - Slf4jLogger started
+2018-02-12T13:23:25.572+0000: 1.755: [Full GC (Metadata GC Threshold) 2018-02-12T13:23:25.572+0000: 1.755: [Tenured: 0K->15390K(341376K), 0.0371497 secs] 125718K->15390K(494976K), [Metaspace: 20859K->20859K(1067008K)], 0.0372369 secs] [Times: user=0.03 sys=0.00, real=0.04 secs] 
+13:23:25.947 [worker-akka.actor.default-dispatcher-2] INFO  a.r.a.ArteryTransport(akka://worker) akka.remote.artery.ArteryTransport(akka://worker) - Started embedded media driver in directory [/dev/shm/aeron-root-worker-7a6081d6-3fa7-47ac-bc35-bbd4d0b8ad43]
+13:23:26.144 [worker-akka.actor.default-dispatcher-2] INFO  a.r.a.ArteryTransport(akka://worker) akka.remote.artery.ArteryTransport(akka://worker) - Remoting started; listening on address: [akka://worker@172.31.80.161:5412] with UID [1419144611474880953]
+13:23:26.237 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:zookeeper.version=3.4.9-1757313, built on 08/23/2016 06:50 GMT
+13:23:26.238 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:host.name=ip-172-31-80-161.us-west-2.compute.internal
+13:23:26.238 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:java.version=1.8.0_151
+13:23:26.238 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+13:23:26.238 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+13:23:26.238 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:java.class.path=lib/hadoop-annotations-2.7.3.jar:lib/avro-1.7.4.jar:lib/paranamer-2.3.jar:lib/jackson-xc-1.8.3.jar:lib/curator-recipes-2.7.1.jar:lib/agrona-0.9.6.jar:lib/commons-digester-1.8.jar:lib/commons-configuration-1.6.jar:lib/kryonet-2.21.jar:lib/jackson-annotations-2.8.0.jar:lib/akka-testkit_2.11-2.5.6.jar:lib/commons-logging-1.2.jar:lib/leveldbjni-all-1.8.jar:lib/jcommander-1.48.jar:lib/xmlenc-0.52.jar:lib/jaxb-api-2.2.2.jar:lib/jackson-databind-2.8.4.jar:lib/hadoop-auth-2.7.3.jar:lib/flamestream-runtime-1.0-SNAPSHOT-tests.jar:lib/netty-3.10.6.Final.jar:lib/commons-1.1.jar:lib/commons-codec-1.6.jar:lib/config-1.3.1.jar:lib/commons-net-3.1.jar:lib/slf4j-api-1.7.24.jar:lib/commons-httpclient-3.1.jar:lib/htrace-core-3.1.0-incubating.jar:lib/snappy-java-1.0.4.1.jar:lib/flamestream-runtime-1.0-SNAPSHOT.jar:lib/guava-21.0.jar:lib/leveldb-api-0.7.jar:lib/commons-cli-1.4.jar:lib/jsp-api-2.1.jar:lib/scala-parser-combinators_2.11-1.0.4.jar:lib/ant-1.8.1.jar:lib/jersey-json-1.9.jar:lib/asm-5.0.4.jar:lib/flamestream-examples-1.0-SNAPSHOT.jar:lib/java-xmlbuilder-0.4.jar:lib/api-asn1-api-1.0.0-M20.jar:lib/jaxb-impl-2.2.3-1.jar:lib/apacheds-i18n-2.0.0-M15.jar:lib/jersey-server-1.9.jar:lib/minlog-1.3.0.jar:lib/akka-stream_2.11-2.5.6.jar:lib/httpclient-4.1.2.jar:lib/commons-io-2.4.jar:lib/akka-actor_2.11-2.5.6.jar:lib/curator-client-2.7.1.jar:lib/logback-core-1.2.3.jar:lib/jsch-0.1.42.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/activation-1.1.jar:lib/jetty-util-6.1.26.jar:lib/reflectasm-1.11.3.jar:lib/akka-remote_2.11-2.5.6.jar:lib/gson-2.2.4.jar:lib/commons-codec-1.4.jar:lib/akka-protobuf_2.11-2.5.6.jar:lib/jets3t-0.9.0.jar:lib/httpcore-4.1.2.jar:lib/logback-classic-1.2.3.jar:lib/jdom-2.0.2.jar:lib/hadoop-common-2.7.3.jar:lib/api-util-1.0.0-M20.jar:lib/jettison-1.1.jar:lib/jackson-core-asl-1.9.13.jar:lib/trove4j-3.0.3.jar:lib/xz-1.0.jar:lib/jline-0.9.94.jar:lib/commons-1.0-SNAPSHOT.jar:lib/ssl-config-core_2.11-0.2.2.jar:lib/akka-kryo-serialization_2.11-0.5.0.jar:lib/reactive-streams-1.0.1.jar:lib/leveldb-0.7.jar:lib/protobuf-java-2.5.0.jar:lib/curator-framework-2.7.1.jar:lib/kryo-4.0.0.jar:lib/jsr305-3.0.0.jar:lib/flamestream-core-1.0-SNAPSHOT-tests.jar:lib/commons-compress-1.4.1.jar:lib/commons-math3-3.1.1.jar:lib/lz4-1.3.0.jar:lib/jackson-jaxrs-1.8.3.jar:lib/aeron-client-1.3.0.jar:lib/akka-slf4j_2.11-2.5.6.jar:lib/aeron-driver-1.3.0.jar:lib/jdk.tools-1.8.jar:lib/scala-java8-compat_2.11-0.7.0.jar:lib/guava-19.0.jar:lib/zookeeper-3.4.9.jar:lib/ant-launcher-1.8.1.jar:lib/testng-6.10.jar:lib/reflectasm-1.07-shaded.jar:lib/commons-beanutils-core-1.8.0.jar:lib/minlog-1.2.jar:lib/commons-beanutils-1.7.0.jar:lib/commons-lang-2.6.jar:lib/objenesis-2.1.jar:lib/servlet-api-2.5.jar:lib/jool-0.9.12.jar:lib/commons-collections-3.2.2.jar:lib/apacheds-kerberos-codec-2.0.0-M15.jar:lib/commons-math3-3.6.1.jar:lib/commons-lang3-3.4.jar:lib/jackson-core-2.8.4.jar:lib/asm-3.1.jar:lib/jetty-6.1.26.jar:lib/flamestream-core-1.0-SNAPSHOT.jar:lib/jersey-core-1.9.jar:lib/annotations-12.0.jar:lib/scala-library-2.11.11.jar:lib/stax-api-1.0-2.jar:flamestream-runtime-1.0-SNAPSHOT.jar
+13:23:26.238 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+13:23:26.239 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:java.io.tmpdir=/tmp
+13:23:26.239 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:java.compiler=<NA>
+13:23:26.239 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:os.name=Linux
+13:23:26.239 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:os.arch=amd64
+13:23:26.239 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:os.version=4.4.0-1049-aws
+13:23:26.240 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:user.name=root
+13:23:26.241 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:user.home=/root
+13:23:26.241 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Client environment:user.dir=/opt/flamestream
+13:23:26.244 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Initiating client connection, connectString=172.31.168.30:2181 sessionTimeout=5000 watcher=com.spbsu.flamestream.runtime.application.LifecycleWatcher$$Lambda$29/163846144@70e0cc66
+13:23:26.279 [worker-akka.actor.default-dispatcher-2] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Starting...
+13:23:26.280 [worker-akka.actor.default-dispatcher-2-SendThread(172.31.168.30:2181)] INFO  o.a.z.ClientCnxn  - Opening socket connection to server 172.31.168.30/172.31.168.30:2181. Will not attempt to authenticate using SASL (unknown error)
+13:23:26.285 [worker-akka.actor.default-dispatcher-2-SendThread(172.31.168.30:2181)] INFO  o.a.z.ClientCnxn  - Socket connection established to 172.31.168.30/172.31.168.30:2181, initiating session
+13:23:26.293 [worker-akka.actor.default-dispatcher-2-SendThread(172.31.168.30:2181)] INFO  o.a.z.ClientCnxn  - Session establishment complete on server 172.31.168.30/172.31.168.30:2181, sessionid = 0x1618a2e44530005, negotiated timeout = 6000
+13:23:26.374 [worker-akka.actor.default-dispatcher-2] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Connected to ZK
+13:23:37.416 [worker-akka.actor.default-dispatcher-2] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Creating node with watchGraphs: 'com.spbsu.flamestream.core.Graph$Builder$MyGraph@2d0641d4', config: 'ClusterConfig{paths={172.31.217.87=akka://worker@172.31.217.87:5412/user/watcher/graph0000000000, 172.31.137.85=akka://worker@172.31.137.85:5412/user/watcher/graph0000000000, 172.31.13.18=akka://worker@172.31.13.18:5412/user/watcher/graph0000000000, 172.31.80.161=akka://worker@172.31.80.161:5412/user/watcher/graph0000000000, 172.31.79.233=akka://worker@172.31.79.233:5412/user/watcher/graph0000000000}, ackerLocation='172.31.80.161', props=ComputationLayout{ranges={172.31.217.87=HashRange{from=1073741821, to=2147483644}, 172.31.137.85=HashRange{from=-2147483648, to=-1073741825}, 172.31.13.18=HashRange{from=-1073741825, to=-2}, 172.31.80.161=HashRange{from=0, to=0}, 172.31.79.233=HashRange{from=-2, to=1073741821}}}}'
+13:23:37.462 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Starting...
+13:23:37.465 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph - Starting...
+13:23:38.166 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph - Finishing constructor
+13:23:38.166 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000 - Starting...
+13:23:38.168 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/negotiator - Starting...
+13:23:38.169 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/edge - Starting...
+13:23:38.200 [worker-akka.actor.default-dispatcher-2] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@172.31.80.161: connecting to 172.31.168.30:5678
+13:23:38.204 [worker-akka.actor.default-dispatcher-2] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@172.31.80.161: connected to 172.31.168.30:5678
+13:23:38.238 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_374eeaa2-3925-4a40-add3-b885d4076c96 - Starting...
+13:23:38.239 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_64e5948d-ab16-4a74-8b7c-1b2714c6375c - Starting...
+13:23:38.242 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_43dd3b8c-5024-45fc-866b-b55807f3cb19 - Starting...
+13:23:38.242 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_a3477b53-1192-4c35-9090-99a28e8637bd - Starting...
+13:23:38.244 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_2f88c09f-f60a-48d9-9c89-f12d47164630 - Starting...
+13:23:38.251 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_c790d1e8-2f3f-470f-9353-0ecbd8353529 - Starting...
+13:23:38.252 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_30f118c9-2a3b-4145-a9a6-0e40a3071510 - Starting...
+13:23:38.252 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/edge/FlameSocketGraphDeployerRear - Starting...
+13:23:38.252 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/edge/FlameSocketGraphDeployerFront - Starting...
+13:23:38.254 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Registering timestamp (1518441817414, @) for FlameSocketGraphDeployerFront@172.31.217.87
+13:23:38.254 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Front instance "FlameSocketGraphDeployerFront@172.31.217.87" has been registered, sending ticket
+13:23:38.254 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/negotiator - Requesting ticket for the frontClass FlameSocketGraphDeployerFront@172.31.80.161
+13:23:38.254 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Registering timestamp (1518441817414, @) for FlameSocketGraphDeployerFront@172.31.80.161
+13:23:38.255 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Front instance "FlameSocketGraphDeployerFront@172.31.80.161" has been registered, sending ticket
+13:23:38.256 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/negotiator - Ticket for the frontClass received: FrontTicket{allowedTimestamp=(1518441817414, FlameSocketGraphDeployerFront@172.31.80.161)}
+13:23:38.257 [worker-akka.actor.default-dispatcher-2] INFO  c.s.f.r.e.s.SocketFront  - FlameSocketGraphDeployerFront@172.31.80.161: connecting to 172.31.168.30:4567
+13:23:38.275 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Unregistering front FlameSocketGraphDeployerFront@172.31.217.87
+13:23:38.275 [Client] INFO  c.s.f.r.e.s.SocketFront  - FlameSocketGraphDeployerFront@172.31.80.161 has been disconnected from Connection 2
+13:23:38.276 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Unregistering front FlameSocketGraphDeployerFront@172.31.80.161
+13:23:38.317 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Registering timestamp (1518441817414, @) for FlameSocketGraphDeployerFront@172.31.137.85
+13:23:38.318 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Front instance "FlameSocketGraphDeployerFront@172.31.137.85" has been registered, sending ticket
+13:23:38.369 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Registering timestamp (1518441817414, @) for FlameSocketGraphDeployerFront@172.31.13.18
+13:23:38.370 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Front instance "FlameSocketGraphDeployerFront@172.31.13.18" has been registered, sending ticket
+13:23:38.392 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Registering timestamp (1518441817414, @) for FlameSocketGraphDeployerFront@172.31.79.233
+13:23:38.392 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Front instance "FlameSocketGraphDeployerFront@172.31.79.233" has been registered, sending ticket
+13:23:38.406 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Unregistering front FlameSocketGraphDeployerFront@172.31.13.18
+13:23:38.445 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Unregistering front FlameSocketGraphDeployerFront@172.31.79.233
+2018-02-12T13:23:40.630+0000: 16.813: [GC (Allocation Failure) 2018-02-12T13:23:40.630+0000: 16.813: [DefNew: 136576K->17023K(153600K), 0.0269859 secs] 151966K->57278K(494976K), 0.0270477 secs] [Times: user=0.01 sys=0.01, real=0.03 secs] 
+2018-02-12T13:23:46.811+0000: 22.995: [GC (Allocation Failure) 2018-02-12T13:23:46.811+0000: 22.995: [DefNew: 153599K->34K(153600K), 0.0103269 secs] 193854K->55714K(494976K), 0.0103894 secs] [Times: user=0.01 sys=0.01, real=0.01 secs] 
+2018-02-12T13:23:55.818+0000: 32.002: [GC (Allocation Failure) 2018-02-12T13:23:55.818+0000: 32.002: [DefNew: 136610K->39K(153600K), 0.0018611 secs] 192290K->55720K(494976K), 0.0019391 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2018-02-12T13:24:06.610+0000: 42.793: [GC (Allocation Failure) 2018-02-12T13:24:06.610+0000: 42.793: [DefNew: 136615K->38K(153600K), 0.0018981 secs] 192296K->55719K(494976K), 0.0019719 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2018-02-12T13:24:15.251+0000: 51.435: [GC (Allocation Failure) 2018-02-12T13:24:15.251+0000: 51.435: [DefNew: 136614K->39K(153600K), 0.0019104 secs] 192295K->55719K(494976K), 0.0019682 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2018-02-12T13:24:21.811+0000: 57.994: [GC (Allocation Failure) 2018-02-12T13:24:21.811+0000: 57.994: [DefNew: 136615K->42K(153600K), 0.0018777 secs] 192295K->55722K(494976K), 0.0019328 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2018-02-12T13:24:37.122+0000: 73.306: [GC (Allocation Failure) 2018-02-12T13:24:37.122+0000: 73.306: [DefNew: 136618K->347K(153600K), 0.0022667 secs] 192298K->56027K(494976K), 0.0023404 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2018-02-12T13:24:50.453+0000: 86.637: [GC (Allocation Failure) 2018-02-12T13:24:50.453+0000: 86.637: [DefNew: 136923K->111K(153600K), 0.0020672 secs] 192603K->55792K(494976K), 0.0021372 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2018-02-12T13:25:05.553+0000: 101.736: [GC (Allocation Failure) 2018-02-12T13:25:05.553+0000: 101.736: [DefNew: 136687K->112K(153600K), 0.0019700 secs] 192368K->55792K(494976K), 0.0020266 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2018-02-12T13:25:22.026+0000: 118.210: [GC (Allocation Failure) 2018-02-12T13:25:22.026+0000: 118.210: [DefNew: 136688K->112K(153600K), 0.0020822 secs] 192368K->55792K(494976K), 0.0021498 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2018-02-12T13:25:32.199+0000: 128.383: [GC (Allocation Failure) 2018-02-12T13:25:32.199+0000: 128.383: [DefNew: 136688K->126K(153600K), 0.0020318 secs] 192368K->55806K(494976K), 0.0020825 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2018-02-12T13:25:46.986+0000: 143.169: [GC (Allocation Failure) 2018-02-12T13:25:46.986+0000: 143.169: [DefNew: 136702K->125K(153600K), 0.0020422 secs] 192382K->55806K(494976K), 0.0021138 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2018-02-12T13:26:03.441+0000: 159.625: [GC (Allocation Failure) 2018-02-12T13:26:03.441+0000: 159.625: [DefNew: 136701K->126K(153600K), 0.0020295 secs] 192382K->55806K(494976K), 0.0020805 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+13:26:11.908 [Client] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@172.31.80.161: has been disconnected from Connection 2
+13:26:11.912 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Unregistering front FlameSocketGraphDeployerFront@172.31.137.85
+13:26:20.797 [worker-akka.actor.default-dispatcher-2] INFO  a.a.CoordinatedShutdown CoordinatedShutdown(akka://worker) - Starting coordinated shutdown from JVM shutdown hook
+13:26:20.812 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Stopped
+13:26:20.812 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/acker - Acker statistics: {Normal ack duration count=1702859.0, Releasing ack duration max=6288296.0, Normal ack duration average=397.22982172922127, Releasing ack duration min=3728.0, Normal ack duration min=311.0, Normal ack duration max=450445.0, Releasing ack duration average=235503.321, Releasing ack duration count=1000.0}
+13:26:20.813 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/negotiator - Stopped
+13:26:20.818 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/edge/FlameSocketGraphDeployerFront - Stopped
+13:26:20.819 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/edge/FlameSocketGraphDeployerRear - Stopped
+13:26:20.819 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_2f88c09f-f60a-48d9-9c89-f12d47164630 - Stopped
+13:26:20.819 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_30f118c9-2a3b-4145-a9a6-0e40a3071510 - Stopped
+13:26:20.825 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_374eeaa2-3925-4a40-add3-b885d4076c96 - Stopped
+13:26:20.833 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_43dd3b8c-5024-45fc-866b-b55807f3cb19 - Stopped
+13:26:20.833 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_64e5948d-ab16-4a74-8b7c-1b2714c6375c - Stopped
+13:26:20.833 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_a3477b53-1192-4c35-9090-99a28e8637bd - Stopped
+13:26:20.834 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph/ActorJoba_c790d1e8-2f3f-470f-9353-0ecbd8353529 - Stopped
+13:26:20.834 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/edge - Stopped
+13:26:20.836 [worker-akka.actor.default-dispatcher-2-EventThread] INFO  o.a.z.ClientCnxn  - EventThread shut down for session: 0x1618a2e44530005
+13:26:20.837 [worker-akka.actor.default-dispatcher-2] INFO  o.a.z.ZooKeeper  - Session: 0x1618a2e44530005 closed
+13:26:20.837 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000/graph - Stopped
+13:26:20.837 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/graph0000000000 - Stopped
+13:26:20.837 [worker-akka.actor.default-dispatcher-2] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Stopped
+13:26:20.850 [worker-akka.actor.default-dispatcher-2] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@172.31.80.161:5412/system/remoting-terminator - Shutting down remote daemon.
+13:26:20.852 [worker-akka.actor.default-dispatcher-2] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@172.31.80.161:5412/system/remoting-terminator - Remote daemon shut down; proceeding with flushing remote transports.
+13:26:21.934 [worker-akka.actor.default-dispatcher-2] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@172.31.80.161:5412/system/remoting-terminator - Remoting shut down.
+Attempts of event 'barrier-delay' - 0
+Attempts of event 'front-receive-send' - 0
+Attempts of event 'inject-out' - 0
+Attempts of event 'flatmap-receive' - 0
+Attempts of event 'accept-out' - 0
+Attempts of event 'rear-in' - 0
+Attempts of event 'flatmap-send' - 0
+Attempts of event 'inject-in' - 0
+Attempts of event 'wrong-ordering-filter-receive' - 0
+Attempts of event 'accept-in' - 0
+Attempts of event 'grouping-receive' - 0
+Heap
+ def new generation   total 153600K, used 128769K [0x00000000e0c00000, 0x00000000eb2a0000, 0x00000000eb2a0000)
+  eden space 136576K,  94% used [0x00000000e0c00000, 0x00000000e89a0c88, 0x00000000e9160000)
+  from space 17024K,   0% used [0x00000000ea200000, 0x00000000ea21f848, 0x00000000eb2a0000)
+  to   space 17024K,   0% used [0x00000000e9160000, 0x00000000e9160000, 0x00000000ea200000)
+ tenured generation   total 341376K, used 55680K [0x00000000eb2a0000, 0x0000000100000000, 0x0000000100000000)
+   the space 341376K,  16% used [0x00000000eb2a0000, 0x00000000ee900188, 0x00000000ee900200, 0x0000000100000000)
+ Metaspace       used 32821K, capacity 33514K, committed 33792K, reserved 1079296K
+  class space    used 4411K, capacity 4575K, committed 4608K, reserved 1048576K
