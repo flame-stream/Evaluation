@@ -1,0 +1,1423 @@
+15:40:31.972 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.flamestream.example.bl.index.model.WikipediaPage does not contain a setter for field id
+15:40:31.976 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.flamestream.example.bl.index.model.WikipediaPage is not a valid POJO type because not all fields are valid POJO fields.
+15:40:32.096 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.benchmark.flink.index.Result does not contain a setter for field wordIndexAdd
+15:40:32.097 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.benchmark.flink.index.Result is not a valid POJO type because not all fields are valid POJO fields.
+15:40:32.145 [Thread-1] INFO  o.a.f.s.a.e.RemoteStreamEnvironment  - Running remotely at 172.31.34.147:6123
+15:40:32.480 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Starting client actor system.
+15:40:32.484 [Thread-1] INFO  o.a.f.r.u.LeaderRetrievalUtils  - Trying to select the network interface and address to use by connecting to the leading JobManager.
+15:40:32.484 [Thread-1] INFO  o.a.f.r.u.LeaderRetrievalUtils  - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+15:40:32.486 [Thread-1] INFO  o.a.f.r.n.ConnectionUtils  - Retrieved new target address /172.31.34.147:6123.
+15:40:32.502 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Trying to start actor system at ip-172-31-34-147.us-east-2.compute.internal:0
+[GC (Allocation Failure) [DefNew: 54656K->6784K(61440K), 0.0275468 secs] 54656K->12668K(198016K), 0.0275867 secs] [Times: user=0.02 sys=0.02, real=0.03 secs] 
+[Full GC (Metadata GC Threshold) [Tenured: 5884K->13621K(136576K), 0.0263129 secs] 24425K->13621K(198016K), [Metaspace: 20848K->20848K(1067008K)], 0.0263695 secs] [Times: user=0.02 sys=0.00, real=0.02 secs] 
+15:40:33.127 [flink-akka.actor.default-dispatcher-4] INFO  a.e.s.Slf4jLogger  - Slf4jLogger started
+15:40:33.221 [flink-akka.actor.default-dispatcher-4] INFO  a.r.Remoting akka.remote.Remoting - Starting remoting
+15:40:33.355 [flink-akka.actor.default-dispatcher-6] INFO  a.r.Remoting akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://flink@ip-172-31-34-147.us-east-2.compute.internal:41802]
+15:40:33.402 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Actor system started at akka.tcp://flink@ip-172-31-34-147.us-east-2.compute.internal:41802
+15:40:33.403 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Submitting job with JobID: fe550358dfa7c5e8fff3fe5ed48e3abf. Waiting for job completion.
+Submitting job with JobID: fe550358dfa7c5e8fff3fe5ed48e3abf. Waiting for job completion.
+15:40:33.415 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Disconnect from JobManager null.
+15:40:33.436 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Received SubmitJobAndWait(JobGraph(jobId: fe550358dfa7c5e8fff3fe5ed48e3abf)) but there is no connection to a JobManager yet.
+15:40:33.442 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Received job Flink Streaming Job (fe550358dfa7c5e8fff3fe5ed48e3abf).
+15:40:33.656 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Connect to JobManager Actor[akka.tcp://flink@172.31.34.147:6123/user/jobmanager#1778010642].
+15:40:33.660 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Connected to JobManager at Actor[akka.tcp://flink@172.31.34.147:6123/user/jobmanager#1778010642] with leader session id 00000000-0000-0000-0000-000000000000.
+Connected to JobManager at Actor[akka.tcp://flink@172.31.34.147:6123/user/jobmanager#1778010642] with leader session id 00000000-0000-0000-0000-000000000000.
+15:40:33.661 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Sending message to JobManager akka.tcp://flink@172.31.34.147:6123/user/jobmanager to submit job Flink Streaming Job (fe550358dfa7c5e8fff3fe5ed48e3abf) and wait for progress
+15:40:33.666 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - Upload jar files to job manager akka.tcp://flink@172.31.34.147:6123/user/jobmanager.
+15:40:35.750 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - Submit job to the job manager akka.tcp://flink@172.31.34.147:6123/user/jobmanager.
+15:40:35.961 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - Job fe550358dfa7c5e8fff3fe5ed48e3abf was successfully submitted to the JobManager akka://flink/deadLetters.
+15:40:35.974 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:35	Job execution switched to status RUNNING.
+02/13/2018 15:40:35	Job execution switched to status RUNNING.
+15:40:35.991 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:35	Source: Custom Source(1/10) switched to SCHEDULED 
+02/13/2018 15:40:35	Source: Custom Source(1/10) switched to SCHEDULED 
+15:40:36.000 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:35	Source: Custom Source(2/10) switched to SCHEDULED 
+02/13/2018 15:40:35	Source: Custom Source(2/10) switched to SCHEDULED 
+15:40:36.005 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(3/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(3/10) switched to SCHEDULED 
+15:40:36.007 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(4/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(4/10) switched to SCHEDULED 
+15:40:36.012 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(5/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(5/10) switched to SCHEDULED 
+15:40:36.015 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(6/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(6/10) switched to SCHEDULED 
+15:40:36.018 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(7/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(7/10) switched to SCHEDULED 
+15:40:36.024 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(8/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(8/10) switched to SCHEDULED 
+15:40:36.032 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(9/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(9/10) switched to SCHEDULED 
+15:40:36.037 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(10/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Source: Custom Source(10/10) switched to SCHEDULED 
+15:40:36.044 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(1/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(1/10) switched to SCHEDULED 
+15:40:36.051 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(2/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(2/10) switched to SCHEDULED 
+15:40:36.057 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(3/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(3/10) switched to SCHEDULED 
+15:40:36.059 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(4/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(4/10) switched to SCHEDULED 
+15:40:36.061 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(5/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(5/10) switched to SCHEDULED 
+15:40:36.071 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(6/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(6/10) switched to SCHEDULED 
+15:40:36.079 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(7/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(7/10) switched to SCHEDULED 
+15:40:36.081 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(8/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(8/10) switched to SCHEDULED 
+15:40:36.082 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(9/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(9/10) switched to SCHEDULED 
+15:40:36.082 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(10/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Flat Map(10/10) switched to SCHEDULED 
+15:40:36.087 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(1/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(1/10) switched to SCHEDULED 
+15:40:36.088 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(2/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(2/10) switched to SCHEDULED 
+15:40:36.089 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(3/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(3/10) switched to SCHEDULED 
+15:40:36.090 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(4/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(4/10) switched to SCHEDULED 
+15:40:36.103 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(5/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(5/10) switched to SCHEDULED 
+15:40:36.108 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(6/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(6/10) switched to SCHEDULED 
+15:40:36.114 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(7/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(7/10) switched to SCHEDULED 
+15:40:36.115 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(8/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(8/10) switched to SCHEDULED 
+15:40:36.116 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(9/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(9/10) switched to SCHEDULED 
+15:40:36.117 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(10/10) switched to SCHEDULED 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(10/10) switched to SCHEDULED 
+15:40:36.118 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(1/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(1/10) switched to DEPLOYING 
+15:40:36.119 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(2/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(2/10) switched to DEPLOYING 
+15:40:36.130 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(3/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(3/10) switched to DEPLOYING 
+15:40:36.135 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(4/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(4/10) switched to DEPLOYING 
+15:40:36.143 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(5/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(5/10) switched to DEPLOYING 
+15:40:36.148 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(6/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(6/10) switched to DEPLOYING 
+15:40:36.149 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(7/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(7/10) switched to DEPLOYING 
+15:40:36.170 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(8/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(8/10) switched to DEPLOYING 
+15:40:36.170 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(9/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(9/10) switched to DEPLOYING 
+15:40:36.171 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Source: Custom Source(10/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Source: Custom Source(10/10) switched to DEPLOYING 
+15:40:36.172 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(1/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(1/10) switched to DEPLOYING 
+15:40:36.173 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(2/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(2/10) switched to DEPLOYING 
+15:40:36.174 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(3/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(3/10) switched to DEPLOYING 
+15:40:36.185 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(4/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(4/10) switched to DEPLOYING 
+15:40:36.187 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(5/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(5/10) switched to DEPLOYING 
+15:40:36.188 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(6/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(6/10) switched to DEPLOYING 
+15:40:36.203 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(7/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(7/10) switched to DEPLOYING 
+15:40:36.219 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(8/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(8/10) switched to DEPLOYING 
+15:40:36.220 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(9/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(9/10) switched to DEPLOYING 
+15:40:36.220 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Flat Map(10/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Flat Map(10/10) switched to DEPLOYING 
+15:40:36.220 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(1/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(1/10) switched to DEPLOYING 
+15:40:36.223 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(2/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(2/10) switched to DEPLOYING 
+15:40:36.227 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(3/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(3/10) switched to DEPLOYING 
+15:40:36.229 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(4/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(4/10) switched to DEPLOYING 
+15:40:36.241 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(5/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(5/10) switched to DEPLOYING 
+15:40:36.249 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(6/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(6/10) switched to DEPLOYING 
+15:40:36.254 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(7/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(7/10) switched to DEPLOYING 
+15:40:36.257 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(8/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(8/10) switched to DEPLOYING 
+15:40:36.257 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(9/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(9/10) switched to DEPLOYING 
+15:40:36.258 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(10/10) switched to DEPLOYING 
+02/13/2018 15:40:36	Process -> Process -> Sink: Unnamed(10/10) switched to DEPLOYING 
+15:40:41.790 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(1/10) switched to RUNNING 
+02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(1/10) switched to RUNNING 
+15:40:41.801 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Source: Custom Source(3/10) switched to RUNNING 
+02/13/2018 15:40:41	Source: Custom Source(3/10) switched to RUNNING 
+15:40:41.804 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Source: Custom Source(2/10) switched to RUNNING 
+02/13/2018 15:40:41	Source: Custom Source(2/10) switched to RUNNING 
+15:40:41.815 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(2/10) switched to RUNNING 
+02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(2/10) switched to RUNNING 
+15:40:41.819 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Flat Map(3/10) switched to RUNNING 
+02/13/2018 15:40:41	Flat Map(3/10) switched to RUNNING 
+15:40:41.822 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Flat Map(1/10) switched to RUNNING 
+02/13/2018 15:40:41	Flat Map(1/10) switched to RUNNING 
+15:40:41.826 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(3/10) switched to RUNNING 
+02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(3/10) switched to RUNNING 
+15:40:41.827 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Flat Map(2/10) switched to RUNNING 
+02/13/2018 15:40:41	Flat Map(2/10) switched to RUNNING 
+15:40:41.828 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Source: Custom Source(1/10) switched to RUNNING 
+02/13/2018 15:40:41	Source: Custom Source(1/10) switched to RUNNING 
+15:40:41.916 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(6/10) switched to RUNNING 
+02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(6/10) switched to RUNNING 
+15:40:41.925 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Source: Custom Source(6/10) switched to RUNNING 
+02/13/2018 15:40:41	Source: Custom Source(6/10) switched to RUNNING 
+15:40:41.926 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Flat Map(7/10) switched to RUNNING 
+02/13/2018 15:40:41	Flat Map(7/10) switched to RUNNING 
+15:40:41.932 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Source: Custom Source(7/10) switched to RUNNING 
+02/13/2018 15:40:41	Source: Custom Source(7/10) switched to RUNNING 
+15:40:41.934 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Flat Map(6/10) switched to RUNNING 
+02/13/2018 15:40:41	Flat Map(6/10) switched to RUNNING 
+15:40:41.944 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(7/10) switched to RUNNING 
+02/13/2018 15:40:41	Process -> Process -> Sink: Unnamed(7/10) switched to RUNNING 
+15:40:42.049 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(5/10) switched to RUNNING 
+02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(5/10) switched to RUNNING 
+15:40:42.056 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Flat Map(5/10) switched to RUNNING 
+02/13/2018 15:40:42	Flat Map(5/10) switched to RUNNING 
+15:40:42.057 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(5/10) switched to RUNNING 
+02/13/2018 15:40:42	Source: Custom Source(5/10) switched to RUNNING 
+15:40:42.060 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Flat Map(4/10) switched to RUNNING 
+02/13/2018 15:40:42	Flat Map(4/10) switched to RUNNING 
+15:40:42.060 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(4/10) switched to RUNNING 
+02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(4/10) switched to RUNNING 
+15:40:42.063 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(4/10) switched to RUNNING 
+02/13/2018 15:40:42	Source: Custom Source(4/10) switched to RUNNING 
+15:40:42.097 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.39.64:56150
+15:40:42.097 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.39.64:56150
+15:40:42.100 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.42.36:59340
+15:40:42.100 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.42.36:59340
+15:40:42.134 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.33.155:41150
+15:40:42.134 [Server] INFO  c.s.f.e.b.BenchStand  - Accepting connection: /172.31.33.155:41150
+15:40:42.183 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(8/10) switched to RUNNING 
+02/13/2018 15:40:42	Source: Custom Source(8/10) switched to RUNNING 
+15:40:42.189 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(8/10) switched to RUNNING 
+02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(8/10) switched to RUNNING 
+15:40:42.190 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Flat Map(8/10) switched to RUNNING 
+02/13/2018 15:40:42	Flat Map(8/10) switched to RUNNING 
+15:40:42.193 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(2/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(2/10) switched to FINISHED 
+15:40:42.209 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(9/10) switched to RUNNING 
+02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(9/10) switched to RUNNING 
+15:40:42.209 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(9/10) switched to RUNNING 
+02/13/2018 15:40:42	Source: Custom Source(9/10) switched to RUNNING 
+15:40:42.210 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(1/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(1/10) switched to FINISHED 
+15:40:42.210 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(10/10) switched to RUNNING 
+02/13/2018 15:40:42	Source: Custom Source(10/10) switched to RUNNING 
+15:40:42.211 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Flat Map(9/10) switched to RUNNING 
+02/13/2018 15:40:42	Flat Map(9/10) switched to RUNNING 
+15:40:42.211 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(10/10) switched to RUNNING 
+02/13/2018 15:40:42	Process -> Process -> Sink: Unnamed(10/10) switched to RUNNING 
+15:40:42.212 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Flat Map(10/10) switched to RUNNING 
+02/13/2018 15:40:42	Flat Map(10/10) switched to RUNNING 
+[GC (Allocation Failure) [DefNew: 54620K->6784K(61440K), 0.0291444 secs] 68242K->26624K(198016K), 0.0291922 secs] [Times: user=0.00 sys=0.02, real=0.03 secs] 
+15:40:42.303 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.34.169:59008
+15:40:42.303 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.34.169:59008
+15:40:42.304 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.35.79:59836
+15:40:42.304 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.35.79:59836
+15:40:42.368 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(6/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(6/10) switched to FINISHED 
+15:40:42.385 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(7/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(7/10) switched to FINISHED 
+15:40:42.405 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.47.100:57802
+15:40:42.405 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.47.100:57802
+15:40:42.418 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.45.197:41954
+15:40:42.418 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.45.197:41954
+15:40:42.462 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(5/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(5/10) switched to FINISHED 
+15:40:42.501 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(4/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(4/10) switched to FINISHED 
+15:40:42.533 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.44.83:54644
+15:40:42.534 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.44.83:54644
+15:40:42.557 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.47.83:53174
+15:40:42.557 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.47.83:53174
+15:40:42.567 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.37.101:56586
+15:40:42.567 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.37.101:56586
+15:40:42.616 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(8/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(8/10) switched to FINISHED 
+[GC (Allocation Failure) [DefNew: 61440K->6784K(61440K), 0.0481684 secs] 81280K->41283K(198016K), 0.0482063 secs] [Times: user=0.01 sys=0.01, real=0.05 secs] 
+15:40:42.679 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(10/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(10/10) switched to FINISHED 
+15:40:42.680 [flink-akka.actor.default-dispatcher-2] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:40:42	Source: Custom Source(9/10) switched to FINISHED 
+02/13/2018 15:40:42	Source: Custom Source(9/10) switched to FINISHED 
+[GC (Allocation Failure) [DefNew: 61440K->6784K(61440K), 0.0162689 secs] 95939K->52236K(198016K), 0.0163128 secs] [Times: user=0.00 sys=0.01, real=0.01 secs] 
+15:40:43.153 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 0
+15:40:43.246 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 1
+15:40:43.349 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 2
+15:40:43.390 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 3
+15:40:43.554 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 4
+15:40:43.641 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 5
+15:40:43.678 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 6
+15:40:43.688 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 7
+15:40:43.822 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 8
+15:40:43.829 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 9
+15:40:44.014 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 10
+15:40:44.087 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 11
+15:40:44.195 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 12
+15:40:44.258 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 13
+15:40:44.304 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 14
+15:40:44.325 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 15
+15:40:44.359 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 16
+[GC (Allocation Failure) [DefNew: 61440K->6784K(61440K), 0.0205557 secs] 106892K->62744K(198016K), 0.0206219 secs] [Times: user=0.01 sys=0.01, real=0.02 secs] 
+15:40:44.464 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 17
+15:40:44.482 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 18
+15:40:44.509 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 19
+15:40:44.650 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 20
+15:40:44.658 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 21
+15:40:44.700 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 22
+15:40:44.753 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 23
+15:40:44.761 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 24
+15:40:44.785 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 10000/757873
+15:40:44.825 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 25
+15:40:44.922 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 26
+15:40:44.958 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 27
+15:40:45.084 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 20000/757873
+15:40:45.087 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 28
+15:40:45.132 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 29
+15:40:45.174 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 30
+15:40:45.346 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 31
+15:40:45.354 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 32
+15:40:45.419 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 33
+15:40:45.435 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 34
+15:40:45.501 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 35
+15:40:45.568 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 36
+15:40:45.642 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 30000/757873
+15:40:45.674 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 37
+15:40:45.677 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 38
+15:40:45.727 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 39
+15:40:45.918 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 40
+15:40:45.949 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 41
+15:40:46.191 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 42
+15:40:46.231 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 40000/757873
+15:40:46.233 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 43
+15:40:46.332 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 44
+15:40:46.362 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 45
+15:40:46.384 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 46
+15:40:46.413 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 47
+15:40:46.474 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 48
+15:40:46.511 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 49
+15:40:46.527 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 50
+15:40:46.612 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 51
+15:40:46.734 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 52
+15:40:46.742 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 53
+15:40:46.768 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 54
+15:40:46.859 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 55
+15:40:46.883 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 56
+15:40:46.910 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 57
+15:40:46.956 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 50000/757873
+15:40:47.006 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 58
+15:40:47.105 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 59
+15:40:47.116 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 60
+15:40:47.148 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 61
+15:40:47.194 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 62
+15:40:47.307 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 63
+15:40:47.330 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 64
+15:40:47.427 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 65
+15:40:47.490 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 66
+15:40:47.578 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 60000/757873
+15:40:47.690 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 67
+15:40:47.768 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 68
+15:40:47.875 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 69
+15:40:47.914 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 70
+15:40:47.950 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 71
+15:40:48.001 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 72
+15:40:48.070 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 73
+15:40:48.093 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 74
+15:40:48.179 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 75
+15:40:48.180 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 76
+15:40:48.220 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 77
+15:40:48.476 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 78
+15:40:48.523 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 79
+15:40:48.560 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 80
+15:40:48.597 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 81
+15:40:48.613 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 82
+15:40:48.665 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 83
+15:40:48.733 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 84
+15:40:48.771 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 85
+15:40:49.175 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 86
+15:40:49.299 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 87
+15:40:49.515 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 88
+15:40:49.629 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 70000/757873
+15:40:49.645 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 89
+15:40:49.651 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 90
+15:40:49.721 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 91
+15:40:49.841 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 92
+15:40:49.849 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 93
+15:40:49.867 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 94
+15:40:49.913 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 95
+15:40:50.015 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 96
+15:40:50.125 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 97
+15:40:50.217 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 80000/757873
+15:40:50.232 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 98
+15:40:50.249 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 99
+15:40:50.263 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 100
+15:40:50.289 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 101
+15:40:50.441 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 102
+15:40:50.477 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 103
+15:40:50.641 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 104
+15:40:50.645 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 105
+15:40:50.681 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 106
+15:40:50.717 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 107
+15:40:50.754 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 108
+15:40:50.856 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 109
+15:40:50.903 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 110
+15:40:50.930 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 111
+15:40:50.976 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 112
+15:40:50.991 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 113
+15:40:50.995 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 90000/757873
+15:40:51.001 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 114
+15:40:51.031 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 115
+15:40:51.137 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 116
+15:40:51.230 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 117
+15:40:51.258 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 118
+15:40:51.291 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 119
+[GC (Allocation Failure) [DefNew: 61440K->135K(61440K), 0.0152912 secs] 117400K->62872K(198016K), 0.0153376 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+15:40:51.353 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 120
+15:40:51.355 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 100000/757873
+15:40:51.550 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 121
+15:40:51.601 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 122
+15:40:51.637 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 123
+15:40:51.702 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 124
+15:40:51.782 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 125
+15:40:51.814 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 126
+15:40:51.886 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 127
+15:40:51.997 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 128
+15:40:52.049 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 129
+15:40:52.054 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 130
+15:40:52.125 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 131
+15:40:52.183 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 132
+15:40:52.209 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 133
+15:40:52.272 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 134
+15:40:52.279 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 135
+15:40:52.325 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 136
+15:40:52.480 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 137
+15:40:52.493 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 138
+15:40:52.551 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 110000/757873
+15:40:52.600 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 139
+15:40:52.691 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 140
+15:40:52.723 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 141
+15:40:52.736 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 142
+15:40:52.823 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 143
+15:40:52.883 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 144
+15:40:52.892 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 145
+15:40:53.111 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 146
+15:40:53.124 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 147
+15:40:53.167 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 148
+15:40:53.168 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 149
+15:40:53.194 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 120000/757873
+15:40:53.257 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 150
+15:40:53.270 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 151
+15:40:53.333 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 152
+15:40:53.584 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 153
+15:40:53.659 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 154
+15:40:53.875 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 155
+15:40:53.999 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 156
+15:40:54.100 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 157
+15:40:54.194 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 158
+15:40:54.297 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 159
+15:40:54.705 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 160
+15:40:54.811 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 161
+15:40:54.828 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 162
+15:40:54.845 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 163
+15:40:54.848 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 164
+15:40:54.862 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 165
+15:40:55.028 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 130000/757873
+15:40:55.071 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 166
+15:40:55.266 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 167
+15:40:55.283 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 168
+15:40:55.411 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 169
+15:40:55.455 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 170
+15:40:55.475 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 171
+15:40:55.628 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 172
+15:40:55.737 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 173
+15:40:55.741 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 174
+15:40:55.763 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 175
+15:40:55.923 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 176
+15:40:55.927 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 177
+15:40:55.953 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 178
+15:40:55.958 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 140000/757873
+15:40:55.984 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 179
+15:40:56.059 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 180
+15:40:56.073 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 181
+15:40:56.090 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 182
+15:40:56.285 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 183
+15:40:56.324 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 184
+15:40:56.425 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 185
+15:40:56.447 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 186
+15:40:56.451 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 187
+15:40:56.501 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 188
+15:40:56.575 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 150000/757873
+15:40:56.583 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 189
+15:40:56.600 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 190
+15:40:56.612 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 191
+15:40:56.638 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 192
+15:40:56.714 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 193
+15:40:56.797 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 194
+15:40:56.821 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 195
+15:40:56.865 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 196
+15:40:56.866 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 197
+15:40:56.884 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 198
+15:40:56.959 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 199
+15:40:56.987 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 200
+15:40:57.022 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 201
+15:40:57.056 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 202
+15:40:57.062 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 203
+15:40:57.157 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 204
+15:40:57.251 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 205
+15:40:57.282 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 206
+15:40:57.387 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 207
+15:40:57.460 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 208
+15:40:57.473 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 209
+15:40:57.503 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 210
+15:40:57.541 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 160000/757873
+15:40:57.708 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 211
+15:40:57.779 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 212
+15:40:57.940 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 213
+15:40:58.037 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 214
+15:40:58.059 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 215
+15:40:58.208 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 216
+15:40:58.290 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 217
+15:40:58.656 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 218
+15:40:58.804 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 219
+15:40:58.852 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 220
+15:40:58.868 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 170000/757873
+15:40:58.951 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 221
+15:40:59.057 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 222
+15:40:59.061 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 223
+15:40:59.070 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 224
+15:40:59.238 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 225
+15:40:59.250 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 226
+15:40:59.291 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 227
+15:40:59.332 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 228
+15:40:59.359 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 229
+15:40:59.398 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 230
+15:40:59.485 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 231
+15:40:59.517 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 232
+15:40:59.561 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 180000/757873
+15:40:59.588 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 233
+15:40:59.627 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 234
+15:40:59.721 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 235
+15:40:59.853 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 236
+15:41:00.090 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 237
+15:41:00.101 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 238
+15:41:00.110 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 239
+15:41:00.202 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 190000/757873
+15:41:00.213 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 240
+[GC (Allocation Failure) [DefNew: 54791K->87K(61440K), 0.0018318 secs] 117528K->62824K(198016K), 0.0018669 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+15:41:00.459 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 241
+15:41:00.617 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 242
+15:41:00.627 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 243
+15:41:00.698 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 244
+15:41:00.709 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 245
+15:41:00.798 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 246
+15:41:00.882 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 247
+15:41:00.973 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 248
+15:41:00.977 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 249
+15:41:01.007 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 250
+15:41:01.057 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 200000/757873
+15:41:01.115 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 251
+15:41:01.121 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 252
+15:41:01.206 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 253
+15:41:01.334 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 254
+15:41:01.353 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 255
+15:41:01.440 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 256
+15:41:01.505 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 257
+15:41:01.518 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 258
+15:41:01.588 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 259
+15:41:01.653 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 260
+15:41:01.717 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 210000/757873
+15:41:01.730 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 261
+15:41:01.778 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 262
+15:41:01.785 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 263
+15:41:01.812 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 264
+15:41:01.833 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 265
+15:41:01.837 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 266
+15:41:01.862 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 267
+15:41:01.934 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 268
+15:41:01.965 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 220000/757873
+15:41:01.970 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 269
+15:41:01.998 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 270
+15:41:02.026 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 271
+15:41:02.029 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 272
+15:41:02.091 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 273
+15:41:02.198 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 274
+15:41:02.442 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 275
+15:41:02.560 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 276
+15:41:02.580 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 277
+15:41:02.660 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 278
+15:41:02.673 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 279
+15:41:02.694 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 230000/757873
+15:41:02.734 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 280
+15:41:02.813 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 281
+15:41:02.902 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 282
+15:41:02.942 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 283
+15:41:03.028 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 284
+15:41:03.076 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 285
+15:41:03.197 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 286
+15:41:03.266 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 287
+15:41:03.424 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 288
+15:41:03.428 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 289
+15:41:03.445 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 290
+15:41:03.503 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 291
+15:41:03.514 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 292
+15:41:03.534 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 240000/757873
+15:41:03.711 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 293
+15:41:03.780 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 294
+15:41:03.809 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 295
+15:41:03.821 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 296
+15:41:03.891 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 297
+15:41:03.950 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 298
+15:41:03.955 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 299
+15:41:04.070 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 300
+15:41:04.126 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 301
+15:41:04.247 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 302
+15:41:04.494 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 303
+15:41:04.517 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 304
+15:41:04.543 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 305
+15:41:04.587 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 306
+15:41:04.627 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 307
+15:41:04.664 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 308
+15:41:04.804 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 309
+15:41:04.843 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 310
+15:41:04.918 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 311
+15:41:04.970 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 250000/757873
+15:41:05.112 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 312
+15:41:05.213 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 313
+15:41:05.216 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 314
+15:41:05.221 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 315
+15:41:05.448 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 316
+15:41:05.475 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 317
+15:41:05.476 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 318
+15:41:05.501 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 319
+15:41:05.698 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 320
+15:41:05.699 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 321
+15:41:05.915 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 322
+15:41:05.936 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 323
+15:41:06.027 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 324
+15:41:06.081 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 325
+15:41:06.081 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 326
+15:41:06.208 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 327
+15:41:06.260 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 328
+15:41:06.319 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 329
+15:41:06.327 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 330
+15:41:06.343 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 260000/757873
+15:41:06.390 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 331
+15:41:06.557 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 332
+15:41:06.566 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 333
+15:41:06.569 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 334
+15:41:06.654 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 335
+15:41:06.982 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 336
+15:41:07.020 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 337
+15:41:07.181 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 338
+15:41:07.247 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 339
+15:41:07.265 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 340
+15:41:07.378 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 341
+15:41:07.396 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 342
+15:41:07.402 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 343
+15:41:07.466 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 344
+15:41:07.503 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 270000/757873
+15:41:07.854 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 345
+15:41:07.876 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 346
+15:41:07.879 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 347
+15:41:08.012 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 348
+15:41:08.161 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 349
+15:41:08.232 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 350
+15:41:08.318 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 351
+15:41:08.408 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 352
+15:41:08.409 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 353
+15:41:08.487 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 354
+15:41:08.487 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 355
+15:41:08.532 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 356
+15:41:08.751 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 357
+15:41:08.819 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 358
+15:41:08.848 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 359
+15:41:08.942 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 360
+15:41:09.046 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 361
+15:41:09.229 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 362
+15:41:09.344 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 363
+15:41:09.367 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 364
+15:41:09.378 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 280000/757873
+15:41:09.511 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 365
+15:41:09.575 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 366
+15:41:09.584 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 367
+15:41:09.588 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 368
+15:41:09.603 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 369
+15:41:09.674 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 370
+15:41:09.694 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 371
+15:41:09.718 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 372
+[GC (Allocation Failure) [DefNew: 54743K->104K(61440K), 0.0019229 secs] 117480K->62841K(198016K), 0.0019508 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+15:41:09.740 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 373
+15:41:09.768 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 374
+15:41:09.811 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 375
+15:41:09.826 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 376
+15:41:10.000 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 377
+15:41:10.032 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 378
+15:41:10.122 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 379
+15:41:10.147 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 380
+15:41:10.186 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 290000/757873
+15:41:10.287 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 381
+15:41:10.300 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 382
+15:41:10.310 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 383
+15:41:10.320 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 384
+15:41:10.334 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 385
+15:41:10.335 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 386
+15:41:10.377 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 387
+15:41:10.401 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 388
+15:41:10.490 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 389
+15:41:10.534 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 390
+15:41:10.626 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 391
+15:41:10.944 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 392
+15:41:11.222 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 393
+15:41:11.224 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 394
+15:41:11.267 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 395
+15:41:11.276 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 396
+15:41:11.429 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 397
+15:41:11.450 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 398
+15:41:11.487 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 300000/757873
+15:41:11.589 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 399
+15:41:11.691 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 400
+15:41:11.709 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 401
+15:41:11.725 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 402
+15:41:11.767 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 403
+15:41:11.881 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 404
+15:41:11.905 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 405
+15:41:11.928 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 310000/757873
+15:41:12.022 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 406
+15:41:12.048 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 407
+15:41:12.055 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 408
+15:41:12.104 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 409
+15:41:12.156 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 410
+15:41:12.197 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 411
+15:41:12.361 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 412
+15:41:12.455 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 413
+15:41:12.682 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 414
+15:41:12.713 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 415
+15:41:12.818 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 416
+15:41:13.022 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 417
+15:41:13.027 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 418
+15:41:13.056 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 320000/757873
+15:41:13.192 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 419
+15:41:13.241 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 420
+15:41:13.269 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 421
+15:41:13.445 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 422
+15:41:13.450 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 423
+15:41:13.573 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 424
+15:41:13.585 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 425
+15:41:13.633 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 330000/757873
+15:41:13.739 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 426
+15:41:13.856 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 427
+15:41:14.022 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 428
+15:41:14.136 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 429
+15:41:14.145 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 430
+15:41:14.321 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 431
+15:41:14.339 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 432
+15:41:14.519 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 433
+15:41:14.611 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 434
+15:41:14.697 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 435
+15:41:14.729 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 436
+15:41:14.752 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 340000/757873
+15:41:14.773 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 437
+15:41:14.824 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 438
+15:41:14.850 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 439
+15:41:14.892 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 440
+15:41:14.895 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 441
+15:41:14.951 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 442
+15:41:15.096 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 443
+15:41:15.163 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 350000/757873
+15:41:15.295 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 444
+15:41:15.392 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 445
+15:41:15.395 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 446
+15:41:15.495 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 447
+15:41:15.607 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 448
+15:41:15.647 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 449
+15:41:15.687 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 450
+15:41:15.695 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 451
+15:41:15.752 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 452
+15:41:15.828 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 453
+15:41:15.860 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 454
+15:41:16.001 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 455
+15:41:16.152 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 456
+15:41:16.315 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 457
+15:41:16.370 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 458
+15:41:16.433 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 459
+15:41:16.436 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 460
+15:41:16.476 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 360000/757873
+15:41:16.488 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 461
+15:41:16.501 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 462
+15:41:16.523 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 463
+15:41:16.620 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 464
+15:41:16.657 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 465
+15:41:16.759 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 466
+15:41:16.770 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 467
+15:41:16.803 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 468
+15:41:16.930 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 469
+15:41:16.960 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 470
+15:41:16.973 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 471
+15:41:17.039 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 472
+15:41:17.059 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 473
+15:41:17.110 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 474
+15:41:17.170 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 475
+15:41:17.239 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 476
+15:41:17.254 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 477
+15:41:17.268 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 478
+15:41:17.301 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 479
+15:41:17.313 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 480
+15:41:17.375 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 370000/757873
+15:41:17.402 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 481
+15:41:17.566 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 482
+15:41:17.751 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 483
+15:41:17.770 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 484
+15:41:17.822 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 485
+15:41:17.830 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 486
+15:41:17.896 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 487
+15:41:18.024 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 488
+15:41:18.055 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 489
+15:41:18.206 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 490
+15:41:18.216 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 491
+[GC (Allocation Failure) [DefNew: 54760K->122K(61440K), 0.0019679 secs] 117497K->62859K(198016K), 0.0019993 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+15:41:18.296 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 492
+15:41:18.304 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 493
+15:41:18.313 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 380000/757873
+15:41:18.430 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 494
+15:41:18.506 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 495
+15:41:18.598 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 496
+15:41:18.639 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 497
+15:41:18.679 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 498
+15:41:18.680 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 499
+15:41:18.773 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 500
+15:41:18.785 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 501
+15:41:18.903 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 502
+15:41:19.034 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 503
+15:41:19.112 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 504
+15:41:19.169 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 505
+15:41:19.272 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 506
+15:41:19.382 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 507
+15:41:19.444 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 508
+15:41:19.491 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 390000/757873
+15:41:19.617 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 509
+15:41:19.640 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 510
+15:41:19.684 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 511
+15:41:19.872 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 512
+15:41:19.932 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 513
+15:41:19.937 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 514
+15:41:20.013 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 515
+15:41:20.124 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 516
+15:41:20.168 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 517
+15:41:20.223 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 518
+15:41:20.276 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 519
+15:41:20.351 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 520
+15:41:20.352 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 521
+15:41:20.368 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 522
+15:41:20.504 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 523
+15:41:20.656 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 524
+15:41:20.688 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 400000/757873
+15:41:20.810 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 525
+15:41:20.818 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 526
+15:41:20.927 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 527
+15:41:20.999 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 528
+15:41:21.100 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 529
+15:41:21.212 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 530
+15:41:21.248 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 531
+15:41:21.360 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 532
+15:41:21.388 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 533
+15:41:21.494 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 534
+15:41:21.642 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 535
+15:41:21.669 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 536
+15:41:21.799 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 537
+15:41:21.801 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 538
+15:41:21.851 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 410000/757873
+15:41:21.852 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 539
+15:41:21.931 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 540
+15:41:21.938 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 541
+15:41:22.109 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 542
+15:41:22.126 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 543
+15:41:22.130 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 544
+15:41:22.164 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 545
+15:41:22.189 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 546
+15:41:22.209 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 547
+15:41:22.300 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 548
+15:41:22.453 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 549
+15:41:22.504 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 550
+15:41:22.580 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 551
+15:41:22.584 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 552
+15:41:22.690 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 420000/757873
+15:41:23.004 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 553
+15:41:23.006 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 554
+15:41:23.181 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 555
+15:41:23.183 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 556
+15:41:23.330 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 557
+15:41:23.399 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 558
+15:41:23.453 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 559
+15:41:23.481 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 560
+15:41:23.556 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 561
+15:41:23.599 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 562
+15:41:23.624 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 563
+15:41:23.681 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 564
+15:41:23.686 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 565
+15:41:23.732 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 566
+15:41:23.739 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 567
+15:41:23.772 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 430000/757873
+15:41:23.975 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 568
+15:41:23.989 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 569
+15:41:24.115 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 570
+15:41:24.232 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 571
+15:41:24.416 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 572
+15:41:24.434 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 573
+15:41:24.448 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 574
+15:41:24.515 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 575
+15:41:24.532 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 576
+15:41:24.552 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 577
+15:41:24.563 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 578
+15:41:24.564 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 579
+15:41:24.602 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 580
+15:41:24.631 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 581
+15:41:24.865 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 582
+15:41:24.871 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 583
+15:41:24.887 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 584
+15:41:24.955 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 585
+15:41:24.962 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 586
+15:41:24.975 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 587
+15:41:24.984 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 440000/757873
+15:41:25.007 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 588
+15:41:25.042 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 589
+15:41:25.057 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 590
+15:41:25.130 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 591
+15:41:25.191 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 592
+15:41:25.279 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 593
+15:41:25.315 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 594
+15:41:25.429 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 595
+15:41:25.436 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 596
+15:41:25.473 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 450000/757873
+15:41:25.595 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 597
+15:41:25.706 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 598
+15:41:25.750 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 599
+15:41:25.755 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 600
+15:41:26.017 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 601
+15:41:26.038 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 602
+15:41:26.069 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 603
+15:41:26.193 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 604
+15:41:26.230 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 605
+15:41:26.252 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 460000/757873
+15:41:26.337 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 606
+15:41:26.461 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 607
+15:41:26.675 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 608
+15:41:26.725 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 609
+15:41:26.791 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 610
+15:41:26.832 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 611
+15:41:26.857 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 612
+15:41:26.864 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 613
+15:41:26.999 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 614
+15:41:27.046 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 615
+15:41:27.142 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 616
+15:41:27.644 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 617
+15:41:27.741 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 618
+15:41:27.768 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 619
+15:41:28.080 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 620
+15:41:28.265 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 621
+15:41:28.275 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 470000/757873
+15:41:28.310 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 622
+15:41:28.360 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 623
+15:41:28.490 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 624
+15:41:28.652 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 625
+15:41:28.664 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 626
+[GC (Allocation Failure) [DefNew: 54778K->140K(61440K), 0.0019037 secs] 117515K->62877K(198016K), 0.0019372 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+15:41:28.730 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 627
+15:41:28.752 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 628
+15:41:28.778 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 629
+15:41:28.888 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 630
+15:41:28.915 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 631
+15:41:29.014 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 632
+15:41:29.044 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 633
+15:41:29.151 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 634
+15:41:29.173 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 635
+15:41:29.203 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 480000/757873
+15:41:29.297 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 636
+15:41:29.433 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 637
+15:41:29.461 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 638
+15:41:29.516 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 639
+15:41:29.528 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 640
+15:41:29.557 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 641
+15:41:29.563 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 642
+15:41:29.595 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 643
+15:41:29.606 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 644
+15:41:29.889 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 645
+15:41:29.913 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 646
+15:41:30.075 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 647
+15:41:30.166 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 490000/757873
+15:41:30.492 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 648
+15:41:30.502 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 649
+15:41:30.544 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 650
+15:41:30.578 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 651
+15:41:30.740 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 652
+15:41:30.770 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 653
+15:41:30.987 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 654
+15:41:31.011 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 655
+15:41:31.039 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 656
+15:41:31.162 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 657
+15:41:31.173 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 658
+15:41:31.277 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 659
+15:41:31.351 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 660
+15:41:31.372 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 661
+15:41:31.417 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 662
+15:41:31.498 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 663
+15:41:31.503 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 500000/757873
+15:41:31.568 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 664
+15:41:31.651 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 665
+15:41:31.702 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 666
+15:41:31.711 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 667
+15:41:31.718 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 668
+15:41:31.791 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 669
+15:41:32.009 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 670
+15:41:32.097 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 671
+15:41:32.175 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 672
+15:41:32.255 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 673
+15:41:32.265 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 674
+15:41:32.294 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 675
+15:41:32.362 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 676
+15:41:32.410 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 677
+15:41:32.458 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 510000/757873
+15:41:32.580 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 678
+15:41:32.684 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 679
+15:41:32.721 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 680
+15:41:32.725 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 681
+15:41:32.779 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 682
+15:41:32.813 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 683
+15:41:32.853 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 684
+15:41:32.870 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 685
+15:41:32.881 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 686
+15:41:32.899 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 687
+15:41:32.922 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 688
+15:41:32.948 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 689
+15:41:32.956 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 520000/757873
+15:41:32.971 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 690
+15:41:33.058 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 691
+15:41:33.152 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 692
+15:41:33.254 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 693
+15:41:33.363 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 694
+15:41:33.632 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 695
+15:41:33.808 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 696
+15:41:33.872 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 697
+15:41:33.934 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 698
+15:41:33.963 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 699
+15:41:33.993 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 530000/757873
+15:41:34.008 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 700
+15:41:34.102 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 701
+15:41:34.115 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 702
+15:41:34.169 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 703
+15:41:34.188 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 704
+15:41:34.227 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 705
+15:41:34.444 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 706
+15:41:34.461 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 707
+15:41:34.472 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 708
+15:41:34.475 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 709
+15:41:34.532 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 710
+15:41:34.538 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 540000/757873
+15:41:34.551 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 711
+15:41:34.576 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 712
+15:41:34.612 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 713
+15:41:34.641 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 714
+15:41:34.661 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 715
+15:41:34.766 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 716
+15:41:34.804 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 550000/757873
+15:41:34.808 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 717
+15:41:34.809 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 718
+15:41:34.832 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 719
+15:41:34.874 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 720
+15:41:34.888 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 721
+15:41:35.000 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 722
+15:41:35.042 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 723
+15:41:35.073 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 724
+15:41:35.080 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 725
+15:41:35.255 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 726
+15:41:35.351 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 560000/757873
+15:41:35.422 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 727
+15:41:35.530 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 728
+15:41:35.679 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 729
+15:41:35.804 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 730
+15:41:35.886 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 731
+15:41:36.007 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 732
+15:41:36.027 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 733
+15:41:36.173 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 734
+15:41:36.249 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 735
+15:41:36.320 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 736
+15:41:36.437 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 737
+15:41:36.523 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 738
+15:41:36.524 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 739
+[GC (Allocation Failure) [DefNew: 54796K->225K(61440K), 0.0019801 secs] 117533K->62962K(198016K), 0.0020076 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+15:41:36.697 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 740
+15:41:36.756 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 741
+15:41:36.768 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 742
+15:41:36.829 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 743
+15:41:36.950 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 744
+15:41:36.954 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 745
+15:41:36.982 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 570000/757873
+15:41:36.998 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 746
+15:41:37.416 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 747
+15:41:37.420 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 748
+15:41:37.438 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 749
+15:41:37.545 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 750
+15:41:37.711 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 751
+15:41:38.040 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 752
+15:41:38.061 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 753
+15:41:38.107 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 754
+15:41:38.114 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 755
+15:41:38.151 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 756
+15:41:38.216 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 757
+15:41:38.337 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 758
+15:41:38.402 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 759
+15:41:38.612 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 760
+15:41:38.613 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 761
+15:41:38.712 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 762
+15:41:38.719 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 763
+15:41:38.760 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 580000/757873
+15:41:38.766 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 764
+15:41:38.962 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 765
+15:41:39.064 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 766
+15:41:39.142 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 767
+15:41:39.149 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 768
+15:41:39.159 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 769
+15:41:39.186 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 770
+15:41:39.197 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 771
+15:41:39.215 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 772
+15:41:39.234 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 590000/757873
+15:41:39.253 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 773
+15:41:39.392 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 774
+15:41:39.403 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 775
+15:41:39.422 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 776
+15:41:39.434 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 777
+15:41:39.463 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 778
+15:41:39.482 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 779
+15:41:39.506 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 780
+15:41:39.513 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 781
+15:41:39.552 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 600000/757873
+15:41:39.612 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 782
+15:41:39.631 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 783
+15:41:39.666 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 784
+15:41:39.765 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 785
+15:41:39.930 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 786
+15:41:39.996 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 787
+15:41:40.091 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 788
+15:41:40.148 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 789
+15:41:40.372 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 790
+15:41:40.376 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 791
+15:41:40.429 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 792
+15:41:40.501 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 793
+15:41:40.575 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 794
+15:41:40.650 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 795
+15:41:41.041 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 796
+15:41:41.042 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 797
+15:41:41.102 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 610000/757873
+15:41:41.189 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 798
+15:41:41.292 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 799
+15:41:41.530 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 800
+15:41:41.595 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 801
+15:41:41.636 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 802
+15:41:41.705 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 803
+15:41:41.712 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 804
+15:41:41.739 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 805
+15:41:41.781 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 806
+15:41:41.798 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 807
+15:41:41.821 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 808
+15:41:41.858 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 809
+15:41:42.118 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 810
+15:41:42.217 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 811
+15:41:42.240 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 620000/757873
+15:41:42.323 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 812
+15:41:42.359 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 813
+15:41:42.429 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 814
+15:41:42.455 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 815
+15:41:42.587 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 816
+15:41:42.678 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 817
+15:41:42.688 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 818
+15:41:42.801 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 819
+15:41:42.841 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 820
+15:41:42.881 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 630000/757873
+15:41:42.900 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 821
+15:41:42.928 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 822
+15:41:43.017 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 823
+15:41:43.026 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 824
+15:41:43.084 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 825
+15:41:43.089 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 826
+15:41:43.100 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 827
+15:41:43.112 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 828
+15:41:43.117 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 829
+15:41:43.155 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 830
+15:41:43.258 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 831
+15:41:43.329 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 832
+15:41:43.394 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 833
+15:41:43.484 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 834
+15:41:43.619 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 835
+15:41:43.850 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 836
+15:41:43.958 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 837
+15:41:44.193 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 838
+15:41:44.229 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 640000/757873
+15:41:44.231 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 839
+15:41:44.232 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 840
+15:41:44.271 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 841
+15:41:44.280 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 842
+15:41:44.333 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 843
+15:41:44.475 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 844
+15:41:44.609 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 845
+15:41:44.789 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 846
+15:41:44.883 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 847
+15:41:44.972 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 848
+15:41:45.137 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 849
+15:41:45.187 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 850
+15:41:45.245 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 851
+15:41:45.257 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 852
+15:41:45.285 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 650000/757873
+15:41:45.331 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 853
+15:41:45.434 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 854
+15:41:45.478 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 855
+15:41:45.494 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 856
+15:41:45.582 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 857
+15:41:45.625 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 858
+15:41:45.650 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 859
+15:41:45.670 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 860
+15:41:45.712 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 861
+15:41:45.856 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 862
+15:41:45.881 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 863
+15:41:45.959 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 864
+15:41:46.166 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 865
+15:41:46.190 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 866
+15:41:46.215 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 660000/757873
+15:41:46.222 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 867
+15:41:46.387 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 868
+15:41:46.464 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 869
+[GC (Allocation Failure) [DefNew: 54881K->240K(61440K), 0.0019270 secs] 117618K->62977K(198016K), 0.0019558 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+15:41:46.536 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 870
+15:41:46.548 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 871
+15:41:46.633 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 872
+15:41:46.691 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 873
+15:41:46.733 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 874
+15:41:46.880 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 875
+15:41:46.960 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 876
+15:41:47.010 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 877
+15:41:47.085 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 878
+15:41:47.141 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 879
+15:41:47.174 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 880
+15:41:47.269 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 881
+15:41:47.403 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 882
+15:41:47.436 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 883
+15:41:47.598 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 884
+15:41:47.629 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 670000/757873
+15:41:47.637 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 885
+15:41:47.675 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 886
+15:41:47.763 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 887
+15:41:47.838 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 888
+15:41:47.903 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 889
+15:41:47.914 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 890
+15:41:48.043 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 891
+15:41:48.100 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 892
+15:41:48.179 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 893
+15:41:48.205 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 894
+15:41:48.227 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 895
+15:41:48.247 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 896
+15:41:48.275 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 680000/757873
+15:41:48.355 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 897
+15:41:48.398 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 898
+15:41:48.400 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 899
+15:41:48.528 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 900
+15:41:48.740 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 901
+15:41:49.079 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 902
+15:41:49.121 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 903
+15:41:49.128 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 904
+15:41:49.273 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 905
+15:41:49.288 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 906
+15:41:49.443 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 907
+15:41:49.471 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 908
+15:41:49.596 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 909
+15:41:49.626 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 910
+15:41:49.644 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 911
+15:41:49.660 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 912
+15:41:49.743 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 913
+15:41:49.844 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 914
+15:41:49.849 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 915
+15:41:49.889 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 690000/757873
+15:41:50.024 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 916
+15:41:50.081 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 917
+15:41:50.135 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 918
+15:41:50.262 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 919
+15:41:50.339 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 920
+15:41:50.485 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 921
+15:41:50.527 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 922
+15:41:50.567 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 923
+15:41:50.575 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 924
+15:41:50.597 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 925
+15:41:50.870 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 926
+15:41:50.885 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 700000/757873
+15:41:50.934 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 927
+15:41:51.040 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 928
+15:41:51.067 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 929
+15:41:51.169 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 930
+15:41:51.198 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 931
+15:41:51.209 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 932
+15:41:51.355 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 933
+15:41:51.377 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 934
+15:41:51.580 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 935
+15:41:51.702 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 936
+15:41:51.730 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 937
+15:41:51.887 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 938
+15:41:51.899 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 939
+15:41:51.921 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 940
+15:41:51.930 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 941
+15:41:51.945 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 942
+15:41:51.953 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 943
+15:41:51.998 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 710000/757873
+15:41:52.121 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 944
+15:41:52.159 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 720000/757873
+15:41:52.224 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 945
+15:41:52.244 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 946
+15:41:52.349 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 947
+15:41:52.518 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 948
+15:41:52.556 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 949
+15:41:52.605 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 950
+15:41:52.721 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 951
+15:41:52.841 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 952
+15:41:52.857 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 953
+15:41:52.870 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 954
+15:41:52.871 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 955
+15:41:52.949 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 956
+15:41:53.034 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 957
+15:41:53.046 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 958
+15:41:53.059 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 959
+15:41:53.212 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 960
+15:41:53.215 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 961
+15:41:53.228 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 962
+15:41:53.241 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 963
+15:41:53.260 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 730000/757873
+15:41:53.283 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 964
+15:41:53.301 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 965
+15:41:53.306 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 966
+15:41:53.320 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 967
+15:41:53.340 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 968
+15:41:53.367 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 969
+15:41:53.414 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 970
+15:41:53.471 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 971
+15:41:53.642 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 972
+15:41:53.651 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 973
+15:41:53.708 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 974
+15:41:53.858 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 975
+15:41:53.861 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 976
+15:41:53.889 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 977
+15:41:53.956 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 978
+15:41:53.976 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 979
+15:41:54.021 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 980
+15:41:54.029 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 981
+15:41:54.037 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 982
+15:41:54.046 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 983
+15:41:54.072 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 740000/757873
+15:41:54.086 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 984
+15:41:54.116 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 985
+15:41:54.132 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 986
+15:41:54.162 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 987
+15:41:54.167 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 988
+15:41:54.192 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 750000/757873
+15:41:54.257 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 989
+15:41:54.273 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 990
+15:41:54.274 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 991
+15:41:54.323 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 992
+15:41:54.336 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 993
+15:41:54.399 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 994
+15:41:54.444 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 995
+15:41:54.536 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 996
+15:41:54.729 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 997
+15:41:54.748 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 998
+15:41:54.757 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 999
+[GC (Allocation Failure) [DefNew: 54896K->223K(61440K), 0.0018110 secs] 117633K->62960K(198016K), 0.0018392 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+15:41:54.787 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 10
+15:41:54.787 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 9
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 8
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 7
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 6
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 5
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 4
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 3
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 2
+15:41:54.788 [main] INFO  c.s.f.e.b.BenchStand  - Consumer has been disconnected Connection 1
+Attempts of event 'bench-receive' - 757873
+15:41:54.804 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(2/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(2/10) switched to FINISHED 
+15:41:54.804 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(1/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(1/10) switched to FINISHED 
+15:41:54.807 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(3/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(3/10) switched to FINISHED 
+15:41:54.823 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(4/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(4/10) switched to FINISHED 
+15:41:54.823 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(8/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(8/10) switched to FINISHED 
+15:41:54.825 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(10/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(10/10) switched to FINISHED 
+15:41:54.825 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(5/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(5/10) switched to FINISHED 
+15:41:54.826 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(7/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(7/10) switched to FINISHED 
+15:41:54.826 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(9/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(9/10) switched to FINISHED 
+15:41:54.829 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Source: Custom Source(3/10) switched to FINISHED 
+02/13/2018 15:41:54	Source: Custom Source(3/10) switched to FINISHED 
+15:41:54.830 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Flat Map(6/10) switched to FINISHED 
+02/13/2018 15:41:54	Flat Map(6/10) switched to FINISHED 
+Attempts of event 'bench-send' - 1000
+15:41:54.858 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(2/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(2/10) switched to FINISHED 
+15:41:54.859 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(1/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(1/10) switched to FINISHED 
+15:41:54.864 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(7/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(7/10) switched to FINISHED 
+15:41:54.864 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(3/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(3/10) switched to FINISHED 
+15:41:54.866 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(10/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(10/10) switched to FINISHED 
+15:41:54.868 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(9/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(9/10) switched to FINISHED 
+15:41:54.868 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(8/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(8/10) switched to FINISHED 
+15:41:54.869 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(5/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(5/10) switched to FINISHED 
+15:41:54.872 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(6/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(6/10) switched to FINISHED 
+15:41:54.877 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(4/10) switched to FINISHED 
+02/13/2018 15:41:54	Process -> Process -> Sink: Unnamed(4/10) switched to FINISHED 
+15:41:54.877 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/13/2018 15:41:54	Job execution switched to status FINISHED.
+02/13/2018 15:41:54	Job execution switched to status FINISHED.
+15:41:54.900 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Terminate JobClientActor.
+15:41:54.900 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Disconnect from JobManager Actor[akka.tcp://flink@172.31.34.147:6123/user/jobmanager#1778010642].
+15:41:54.904 [Thread-1] INFO  o.a.f.r.c.JobClient  - Job execution complete
+Exception in thread "Thread-1" java.lang.NoSuchMethodError: akka.actor.ActorSystem.shutdown()V
+	at org.apache.flink.client.program.ClusterClient$LazyActorSystemLoader.shutdown(ClusterClient.java:214)
+	at org.apache.flink.client.program.ClusterClient.shutdown(ClusterClient.java:265)
+	at org.apache.flink.streaming.api.environment.RemoteStreamEnvironment.executeRemotely(RemoteStreamEnvironment.java:223)
+	at org.apache.flink.streaming.api.environment.RemoteStreamEnvironment.execute(RemoteStreamEnvironment.java:176)
+	at org.apache.flink.streaming.api.environment.StreamExecutionEnvironment.execute(StreamExecutionEnvironment.java:1501)
+	at org.jooq.lambda.Unchecked.lambda$runnable$1(Unchecked.java:110)
+	at java.lang.Thread.run(Thread.java:748)
+15:41:54.924 [main] INFO  c.s.f.e.b.BenchStand  - Result: [810787029, 724746754, 931712951, 972932151, 928653078, 848789069, 1083934894, 1136953860, 1093428341, 1107396222, 924650872, 872229224, 871209408, 824213394, 785142310, 781568216, 753185075, 683173219, 671897427, 666914798, 552771115, 561470678, 521142477, 469687367, 562057576, 499236993, 404197067, 379907677, 576483384, 538492961, 514510457, 372812558, 368027908, 303631590, 287708265, 226492642, 159720475, 53758413, 50548633, 129681501, 93699401, 62470844, 45763053, 94208364, 34505878, 42317295, 248138320, 218282467, 159507517, 123414554, 107895915, 23218298, 47322009, 77509851, 122550070, 100910997, 76496259, 49418694, 26975301, 76435052, 100850661, 90820123, 52335919, 272382740, 250532102, 154456556, 90665728, 3569098, 54531493, 11713388, 50997371, 15831441, 4925337, 54703543, 44058442, 15950797, 69443799, 29432286, 53983468, 61626274, 25221762, 145408803, 129506909, 77722069, 9519175, 8187273, 466552793, 337865509, 129233885, 49541606, 44364702, 21575336, 82725764, 80703802, 62608051, 25893131, 212271984, 101353921, 42463932, 78096517, 63664180, 37691172, 58763987, 19421464, 21038722, 18905887, 225436878, 296529174, 257890835, 158261054, 114743049, 431639231, 384539843, 370118268, 360070208, 330134555, 224382246, 132216556, 103050482, 70417275, 14721618, 15640119, 27252152, 28781069, 6598081, 10618215, 54091106, 21213018, 40227295, 23385712, 18319419, 6478854, 8101094, 58288706, 50936730, 43922125, 29860826, 4517828, 58945830, 9878742, 271088637, 277253752, 265255811, 178103682, 117909998, 110086770, 12060130, 41130038, 28636192, 27722602, 31334187, 18662824, 19424697, 11555523, 128506429, 7665835, 10670055, 36728298, 11450845, 12060091, 11671610, 188764318, 170615542, 182078296, 178824485, 170212766, 8201882, 121684253, 104263082, 60407463, 15994873, 36893273, 138198752, 29035771, 40550071, 18453707, 24458920, 32560642, 13552142, 25087371, 158201953, 142797181, 126229469, 7761481, 30248133, 5715211, 25167458, 39386279, 75374170, 11257219, 2514694, 10664200, 33370256, 18302855, 7970973, 13992047, 12863704, 27828523, 34659238, 5216194, 3654915, 25158392, 35068949, 53080168, 6377324, 21772994, 27635963, 24987959, 29449905, 16247181, 38593412, 2766672, 7038645, 330719918, 289433129, 267015397, 122038244, 36941281, 89299037, 65916236, 33930231, 42208317, 34883222, 30674598, 21654706, 33651410, 27932492, 50408015, 15999758, 125560147, 85907924, 1551668, 44536887, 23826431, 132673767, 94879822, 73005633, 23886782, 12514409, 92181179, 78911449, 4937326, 47036066, 37260299, 51641500, 41187213, 3991083, 29134976, 58203475, 53798341, 54010080, 41021643, 34826081, 99394863, 7387172, 7907726, 48075098, 6149729, 57254071, 28125290, 80319947, 25474704, 36760575, 78300228, 50578050, 46677521, 42563157, 18222537, 32950770, 61668258, 52952681, 48818073, 46364540, 95929067, 22374422, 46941441, 6246780, 30158456, 40022627, 26704380, 5905035, 11651167, 9548798, 51470498, 34623505, 31174275, 34846463, 67288590, 38401969, 34050682, 16881010, 13905878, 21030697, 5981969, 14525059, 17924181, 16327597, 21460868, 6696347, 10810805, 44572914, 27732552, 8793987, 8361462, 6124710, 6270874, 17045745, 2872050, 57358812, 21547096, 24280304, 54643496, 6932750, 22838323, 19097748, 15020094, 15429317, 7863942, 9248770, 8007685, 17006083, 16263585, 21846316, 13926719, 20847378, 92894905, 193058470, 67985640, 15456448, 27290230, 32105246, 12896436, 5633475, 34026182, 30406570, 14685088, 8139049, 5927191, 85804932, 23452670, 5787448, 13225098, 62710369, 56164893, 37952604, 13436095, 34043744, 30621140, 31098653, 31288331, 7118466, 9138857, 32315500, 30292410, 13410448, 12575498, 12598965, 29302863, 45669577, 16198053, 11547141, 6391560, 15592564, 35563840, 12689874, 28224892, 6737649, 17814010, 68343361, 53737325, 49439800, 29397217, 4920615, 5191276, 2399422, 7434169, 6129830, 22704762, 6943423, 34337122, 40051279, 28118146, 47202197, 85041795, 74682900, 61375016, 59871314, 57390585, 32969326, 10765000, 5246603, 39835424, 5073514, 22142936, 48011109, 5366644, 39212860, 70246632, 49822071, 39226676, 29055264, 73365986, 55782420, 46358571, 48535257, 23543327, 63460347, 36752419, 30487429, 9264544, 12199860, 9132820, 24916168, 19448812, 12258477, 17067917, 65234332, 35585899, 30593253, 120199189, 97435831, 68256535, 31582935, 26337972, 23709190, 50576938, 14291667, 10768774, 39634287, 20098870, 25348564, 14635026, 46069761, 237461517, 143536873, 57967412, 25367793, 38074464, 110404048, 84120657, 66867220, 63312578, 12302969, 69841250, 15047804, 33216908, 30626862, 54694040, 7093508, 37480219, 16520465, 37075972, 33586636, 14188091, 10665123, 27920830, 17955716, 8546205, 7155928, 6974362, 40920094, 35453867, 36119427, 13832752, 24178093, 20628223, 30517798, 19298749, 25335019, 6332557, 11234985, 5832570, 14487442, 42251516, 14789650, 3793059, 139190936, 123336034, 110265203, 98073609, 86265338, 5130473, 25690858, 4663243, 7303454, 5012554, 28252451, 16742513, 26060722, 26079105, 32844963, 22323703, 17249215, 16216938, 53776106, 14109569, 30604915, 6232616, 28472097, 27841839, 15685899, 18181873, 27109171, 30756130, 21342959, 5801555, 47086263, 19598438, 49375099, 14477558, 12236393, 19243300, 21951226, 14130338, 71573168, 27849462, 4025396, 4917489, 2273010, 10337801, 14413695, 42854577, 26317392, 11348442, 33295563, 3794626, 27329405, 28000796, 73653991, 17500361, 5407390, 62111153, 10955952, 7927525, 17632797, 5088411, 22923366, 15826009, 51849143, 5647499, 22325405, 15341331, 36498024, 20141476, 15403931, 13019664, 8730237, 21529765, 24033613, 23829011, 29959520, 8225229, 107037735, 11572898, 28918836, 36312919, 34343517, 106560224, 37745752, 10314977, 32362436, 22819843, 39820088, 14539186, 20391936, 14716390, 55206267, 47875777, 26012017, 11769553, 21017891, 50679777, 10620009, 2573095, 12536663, 37214956, 19894903, 29233565, 18650317, 17851295, 11900939, 8195962, 10898219, 10035931, 11763544, 30519809, 23577352, 52846445, 29605718, 52228057, 36553466, 51967824, 6989005, 26347094, 10486515, 45799496, 38379001, 90254379, 18209733, 10535400, 5005722, 129557384, 107502222, 76517235, 9304861, 23807079, 3002119, 43893518, 18776318, 10908291, 11732407, 2804191, 10477925, 31435650, 10648447, 6110454, 27976924, 82678553, 12993156, 30985356, 5682984, 10586919, 8630550, 30338115, 28536266, 77693195, 64538128, 49141308, 26501978, 11194327, 13734176, 31587476, 23284494, 4751086, 14918255, 31921591, 54857347, 29636002, 44863671, 28371309, 16188695, 2881332, 29964036, 9379134, 26663063, 33685834, 9171775, 95782882, 21179148, 38675233, 4539539, 5323205, 12922488, 18146434, 9683953, 5864380, 6658894, 17472643, 7884714, 5767894, 22069831, 133178539, 89858303, 6068873, 59259242, 13604910, 26918619, 17355034, 28543414, 10322266, 22234573, 25233435, 13281048, 33612914, 23362378, 5291269, 19334907, 50226486, 28772360, 29479393, 15029754, 26020519, 18660850, 40156465, 72326593, 55070012, 44435301, 26697836, 24874183, 8504158, 10297101, 15994049, 19301335, 15837252, 126373312, 5796256, 131585693, 127511023, 65663475, 35554080, 23441628, 8460091, 8131290, 57749132, 37903780, 3284565, 7393287, 82124219, 70306735, 67905572, 33973456, 52484343, 27928231, 4506969, 36441989, 38393403, 39375622, 21601379, 19816605, 36328363, 3248726, 19611586, 16987670, 43373588, 16589997, 82280801, 100683736, 6465065, 21449374, 7489935, 7450208, 32659099, 7585829, 4244588, 4271133, 7269979, 22513251, 16835415, 6673294, 35201183, 12313862, 22515454, 9828297, 22817490, 17199301, 28949898, 29730961, 44357136, 39541834, 36354308, 9168058, 9765164, 15691211, 5021925, 9467181, 68106317, 31591369, 2886631, 4483369, 3148352, 10871220, 35345380, 49014649, 78133874, 89133106, 5749547, 66616532, 14875123, 7938248, 4356148, 31968158, 38065312, 19047148, 105297096, 34675632, 55306707, 36423323, 50122402, 29855435, 28013713, 50039349, 42513435, 39529535, 20793863, 7206519, 8605896, 13585665, 9563264, 3303628, 10034807, 14608161, 76068695, 30778241, 4281938, 4570954, 33263426, 12503125, 62468496, 4547072, 45262307, 25533750, 25218770, 32001025, 17747992, 41164539, 24674308, 26411303, 14092568, 3336861, 13461853, 6358196, 23694245, 5835054, 31178844, 2629786, 36808604, 78805167, 4186929, 42416730, 55266643, 40506054, 25270366, 11714043, 16091580, 17330912, 20413429, 31822234, 21414095, 30030782, 48346360, 10119588, 5300894, 25612261, 5874143, 26349928, 42781477, 9706501, 12597182, 36454869, 10783750, 59475762, 20813184, 104529109, 50948630, 18679534, 9889249, 5735587, 24508612, 46592167, 53717236, 3941250, 24928331, 28777587, 19402992, 38052992, 20534284, 19511420, 16490398, 4163895, 7046699, 13278266, 44181938, 7114513, 50795445, 17382799, 24519739, 26821556, 8930942, 34280493, 12924610, 10914617, 20793163, 8990508, 9163537, 19129903, 32683468, 10968584, 12151100, 19949581, 2819978, 29183416, 16576788, 39738126, 8257500, 32826580, 7476030, 9953173, 68566152, 21602108, 21586077, 50745195, 8256228, 41855619, 30014445, 6169001, 26162065, 29453126, 28734964, 2399556, 17001488, 18731934, 49622707, 9382241, 6993943, 23464838, 22893870, 32104083, 17175599, 12009918, 9149509, 6421211, 21622875, 8955501, 21674615, 10230836, 43828736, 35611004, 29442555, 61804216, 20280670, 4504317, 31612640, 14828240, 12119548, 27319111, 67227651, 17538307, 27475998, 12916167, 52057519, 18501093, 7098045, 4414542, 23129023, 2869818, 20192378, 34139172, 15305192, 32653038, 103991481, 129756270, 120311526, 105409248, 138562468, 39144802, 20204128, 10029660, 9103497, 27287753, 17102375, 3379546, 30468798, 28063097, 12394685, 16690346, 16038961, 4422446, 32977401, 40091130, 38806637, 4835128, 29892868, 15904664, 29352792, 15619664, 4247121, 1625218, 6083195, 14190682, 9569715, 13632599, 45343649, 34437085, 25786619, 47664243, 10948767, 7977777, 20671735, 40642393, 104541843, 58635118, 50742898, 62422456, 53129138, 13057662, 77578806, 61027584, 31292931, 34150875, 14703231, 18472897, 17861653, 8121372, 14475553, 30508751, 18437813, 44724256, 18934878, 35526314, 30231710]
+[GC (Allocation Failure) [DefNew: 54879K->6784K(61440K), 0.0060173 secs] 117616K->73000K(198016K), 0.0060533 secs] [Times: user=0.00 sys=0.01, real=0.00 secs] 
+[GC (Allocation Failure) [DefNew: 61378K->6784K(61440K), 0.0138802 secs] 127594K->84165K(198016K), 0.0139177 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+15:41:55.391 [main] INFO  c.s.f.e.b.BenchStand  - Page sizes: [5827, 716, 38725, 35472, 24262, 1285, 49274, 63889, 103645, 8627, 1928, 15609, 45092, 233, 31324, 8332, 14579, 57957, 6670, 11029, 7742, 16736, 6559, 8379, 17247, 751, 2298, 16746, 111203, 3651, 7695, 2864, 6364, 33083, 2888, 731, 1135, 406, 1587, 36189, 26579, 2123, 10887, 22500, 7189, 6270, 42546, 824, 31337, 6455, 940, 1664, 8582, 13124, 18134, 12092, 1174, 14263, 6162, 12637, 22146, 11381, 6577, 88984, 13288, 35116, 2123, 375, 13231, 2512, 8878, 1328, 555, 8092, 7260, 2214, 11134, 3425, 8142, 15505, 597, 26935, 13764, 4725, 994, 1126, 177208, 4947, 16178, 4877, 2931, 6845, 15398, 10809, 4908, 2776, 87207, 3686, 10884, 22151, 1621, 1784, 34218, 92, 3374, 1000, 80686, 128248, 879, 3624, 463, 159368, 7341, 8230, 7914, 14369, 20928, 1437, 6563, 14524, 4018, 6220, 10017, 6747, 1274, 2105, 14987, 3845, 14647, 5142, 1500, 1256, 2250, 12802, 12534, 2716, 6435, 973, 19388, 2846, 124036, 11029, 10288, 2551, 563, 55786, 1927, 26971, 6899, 7283, 5133, 1888, 4623, 2811, 52319, 1453, 3512, 12674, 2335, 3167, 3543, 62410, 2241, 5309, 1011, 43965, 731, 53208, 1460, 35937, 1922, 11673, 54261, 998, 5125, 2088, 9070, 19724, 4006, 6400, 88303, 547, 5461, 1177, 11950, 1087, 11711, 19081, 49634, 2816, 296, 3287, 12044, 6417, 2395, 5342, 3915, 9677, 14573, 1155, 989, 10542, 7296, 18820, 2013, 2856, 15289, 4106, 7416, 1291, 20822, 295, 1888, 148798, 28177, 1773, 2664, 11862, 58659, 29368, 11253, 18952, 16527, 747, 849, 7387, 5724, 18393, 4925, 105245, 990, 21, 19925, 8146, 67202, 52675, 51703, 5508, 1669, 48131, 45106, 622, 13910, 15845, 25503, 15723, 726, 12254, 23389, 3962, 26259, 11155, 14986, 63466, 1557, 1042, 28126, 1470, 44926, 9009, 70647, 10705, 20084, 87483, 1989, 16429, 1939, 6542, 11202, 25089, 10280, 12837, 16064, 58968, 8375, 24246, 1139, 11638, 16970, 4421, 1236, 2049, 1906, 33085, 10225, 11315, 24898, 48027, 14783, 3608, 3874, 1912, 4743, 1268, 4029, 9131, 4299, 5338, 1257, 3436, 39509, 10473, 2402, 2707, 1841, 829, 6726, 230, 35050, 9269, 6910, 44275, 931, 3550, 984, 1158, 2921, 1262, 782, 1744, 4392, 1717, 7776, 8450, 11416, 62469, 435, 57768, 4889, 14670, 11994, 2317, 1018, 17911, 789, 3297, 1358, 1191, 72396, 9250, 3137, 4327, 46024, 2166, 23707, 3478, 21832, 1748, 15041, 18744, 2009, 716, 30535, 2609, 2839, 625, 2624, 11402, 34831, 1200, 3326, 1482, 4662, 18304, 510, 13116, 884, 3779, 45044, 9690, 43847, 6127, 1011, 1084, 107, 1456, 1500, 7052, 506, 22917, 19564, 12507, 15506, 32076, 6493, 213, 2607, 24159, 2689, 2671, 434, 18512, 757, 5010, 1085, 569, 29172, 35094, 11859, 24930, 12424, 87282, 1604, 18707, 36177, 2493, 29727, 1723, 17383, 2168, 4184, 3331, 10115, 6111, 2060, 9472, 86055, 21329, 388, 67465, 104213, 7158, 9146, 11991, 6711, 45530, 3604, 2990, 21527, 3809, 6663, 3759, 17736, 174511, 11589, 15223, 5127, 30055, 87871, 14428, 18559, 697, 3075, 72613, 3203, 15957, 1643, 28652, 925, 13751, 2297, 14833, 12288, 2471, 1763, 8927, 3330, 2901, 1773, 736, 21564, 10773, 20801, 291, 16874, 9208, 11222, 2436, 8118, 477, 5510, 1225, 4591, 21910, 7086, 409, 68286, 5028, 32352, 17870, 26190, 1279, 9255, 652, 1408, 872, 21438, 3118, 14523, 12534, 16116, 1429, 3861, 5495, 43651, 3855, 14341, 1764, 8573, 10837, 1947, 5545, 15860, 8831, 5306, 1249, 19578, 5525, 29567, 3867, 5281, 4657, 10896, 3643, 77080, 18707, 411, 579, 168, 2240, 7720, 26527, 11962, 3616, 15828, 410, 13650, 11432, 74398, 5820, 865, 50059, 1701, 957, 9663, 544, 10636, 1830, 23897, 2510, 8963, 5048, 17603, 2034, 3700, 3397, 2729, 5659, 8987, 6681, 15027, 1898, 80273, 2154, 16381, 19676, 1336, 74643, 6438, 2172, 6313, 8269, 12931, 1933, 5810, 2907, 45610, 517, 12673, 1749, 7545, 27921, 2026, 298, 2810, 16029, 1402, 14365, 3451, 640, 1974, 1527, 2990, 2170, 4838, 11074, 15224, 37927, 17489, 59128, 193, 43415, 2422, 6841, 5613, 25447, 5217, 100067, 7114, 2085, 798, 115266, 10176, 3764, 1752, 11610, 250, 15744, 4264, 2770, 2837, 257, 2276, 14934, 2585, 1287, 12694, 81220, 3138, 31804, 835, 2192, 2225, 20036, 14292, 61292, 1257, 48731, 73, 5072, 4872, 23134, 7911, 1460, 5116, 24989, 34879, 18121, 25248, 14654, 610, 524, 17632, 2894, 20378, 22738, 1654, 87907, 5318, 14078, 879, 814, 3227, 7221, 2805, 330, 429, 5310, 1084, 792, 10772, 90895, 12721, 22, 39134, 3471, 9722, 3100, 10611, 2850, 14407, 13485, 2926, 23245, 1729, 2351, 6745, 35639, 15365, 18942, 2514, 8208, 5704, 32651, 26717, 4418, 21262, 2510, 16898, 3204, 3162, 3838, 9175, 3520, 177684, 1187, 101120, 90214, 29369, 1065, 7333, 2976, 2729, 55835, 4352, 1364, 1482, 55504, 27821, 6275, 13891, 44241, 15338, 1969, 16797, 15917, 24501, 10525, 2930, 29928, 762, 6250, 6892, 49421, 3103, 76149, 72296, 1112, 10537, 1387, 1269, 22132, 1942, 755, 583, 1569, 18898, 8433, 682, 16681, 6972, 9126, 1164, 8134, 3487, 12240, 13310, 32083, 659, 9719, 2264, 2086, 6570, 1927, 1458, 32982, 1723, 374, 790, 398, 973, 32983, 43081, 93030, 62385, 858, 40040, 2331, 1245, 162, 12959, 26971, 1563, 78987, 13180, 45646, 6149, 15121, 21508, 10690, 43311, 6762, 21989, 1262, 910, 2286, 3541, 1863, 477, 2013, 5005, 31638, 15621, 673, 451, 25005, 1857, 63679, 839, 32111, 11382, 16309, 14304, 1008, 30639, 9885, 17876, 4095, 1071, 3265, 1071, 19328, 1331, 17080, 289, 26132, 68307, 1092, 23965, 66345, 22725, 14060, 3024, 4820, 5701, 7467, 21017, 2057, 11399, 2945, 828, 836, 14384, 761, 12838, 34057, 2197, 1901, 35556, 1256, 47512, 4535, 46977, 2330, 7247, 2853, 1161, 14622, 51988, 7254, 529, 8183, 12890, 6638, 38196, 11735, 9220, 4663, 664, 744, 5021, 39493, 1046, 39233, 5920, 13471, 12769, 2585, 18000, 2122, 2283, 11484, 1836, 1882, 10362, 19629, 2212, 3702, 7579, 244, 14251, 4461, 22343, 1420, 21607, 2246, 1341, 57512, 10300, 9519, 19117, 1131, 20983, 19217, 1172, 15069, 10515, 15104, 282, 6399, 8404, 32769, 2569, 1396, 16891, 11423, 14449, 6960, 3722, 3050, 1090, 6517, 2918, 8416, 2069, 12768, 21572, 9548, 39526, 8414, 736, 26319, 2669, 3782, 12308, 38409, 8125, 19048, 3781, 34727, 7715, 3772, 1530, 12346, 838, 13261, 16659, 4811, 19985, 88900, 75883, 10431, 10016, 120844, 22529, 7072, 4352, 2419, 14986, 6035, 598, 21097, 15956, 2352, 4822, 1834, 713, 33027, 20186, 16800, 1085, 12798, 2154, 24104, 5539, 817, 182, 1677, 6023, 2577, 1531, 14598, 10426, 13773, 38535, 1719, 930, 7033, 27227, 130959, 10685, 25906, 28844, 2831, 798, 74649, 2679, 6487, 20833, 3948, 3559, 583, 1727, 4465, 16074, 4154, 18759, 5917, 27003, 16208]
+15:41:55.400 [main] INFO  c.s.f.e.b.BenchStand  - Median: 23758134
+15:41:55.401 [main] INFO  c.s.f.e.b.BenchStand  - 75%: 39263912
+15:41:55.401 [main] INFO  c.s.f.e.b.BenchStand  - 90%: 65688751
+15:41:55.401 [main] INFO  c.s.f.e.b.BenchStand  - 99%: 133232378
+15:41:55.408 [flink-akka.actor.default-dispatcher-17] INFO  a.a.CoordinatedShutdown CoordinatedShutdown(akka://flink) - Starting coordinated shutdown from JVM shutdown hook
+15:41:55.422 [flink-akka.actor.default-dispatcher-17] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka.tcp://flink@ip-172-31-34-147.us-east-2.compute.internal:41802/system/remoting-terminator - Shutting down remote daemon.
+15:41:55.426 [flink-akka.actor.default-dispatcher-3] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka.tcp://flink@ip-172-31-34-147.us-east-2.compute.internal:41802/system/remoting-terminator - Remote daemon shut down; proceeding with flushing remote transports.
+15:41:55.474 [flink-akka.actor.default-dispatcher-3] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka.tcp://flink@ip-172-31-34-147.us-east-2.compute.internal:41802/system/remoting-terminator - Remoting shut down.
+Heap
+ def new generation   total 61440K, used 55225K [0x00000000f3800000, 0x00000000f7aa0000, 0x00000000f7aa0000)
+  eden space 54656K,  88% used [0x00000000f3800000, 0x00000000f674e628, 0x00000000f6d60000)
+  from space 6784K, 100% used [0x00000000f7400000, 0x00000000f7aa0000, 0x00000000f7aa0000)
+  to   space 6784K,   0% used [0x00000000f6d60000, 0x00000000f6d60000, 0x00000000f7400000)
+ tenured generation   total 136576K, used 77381K [0x00000000f7aa0000, 0x0000000100000000, 0x0000000100000000)
+   the space 136576K,  56% used [0x00000000f7aa0000, 0x00000000fc631410, 0x00000000fc631600, 0x0000000100000000)
+ Metaspace       used 30013K, capacity 30565K, committed 30640K, reserved 1075200K
+  class space    used 4056K, capacity 4219K, committed 4272K, reserved 1048576K
