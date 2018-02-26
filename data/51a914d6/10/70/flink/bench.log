@@ -1,0 +1,810 @@
+09:46:28.259 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.flamestream.example.bl.index.model.WikipediaPage does not contain a setter for field id
+09:46:28.261 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.flamestream.example.bl.index.model.WikipediaPage is not a valid POJO type because not all fields are valid POJO fields.
+09:46:28.373 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.benchmark.flink.index.Result does not contain a setter for field wordIndexAdd
+09:46:28.373 [main] INFO  o.a.f.a.j.t.TypeExtractor  - class com.spbsu.benchmark.flink.index.Result is not a valid POJO type because not all fields are valid POJO fields.
+09:46:28.421 [Thread-1] INFO  o.a.f.s.a.e.RemoteStreamEnvironment  - Running remotely at 172.31.34.147:6123
+09:46:28.746 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Starting client actor system.
+09:46:28.747 [Thread-1] INFO  o.a.f.r.u.LeaderRetrievalUtils  - Trying to select the network interface and address to use by connecting to the leading JobManager.
+09:46:28.748 [Thread-1] INFO  o.a.f.r.u.LeaderRetrievalUtils  - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+09:46:28.749 [Thread-1] INFO  o.a.f.r.n.ConnectionUtils  - Retrieved new target address /172.31.34.147:6123.
+09:46:28.761 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Trying to start actor system at ip-172-31-34-147.us-east-2.compute.internal:0
+[Full GC (Metadata GC Threshold) [Tenured: 0K->15262K(341376K), 0.0318969 secs] 75213K->15262K(494976K), [Metaspace: 20836K->20836K(1067008K)], 0.0319401 secs] [Times: user=0.03 sys=0.00, real=0.03 secs] 
+09:46:29.329 [flink-akka.actor.default-dispatcher-6] INFO  a.e.s.Slf4jLogger  - Slf4jLogger started
+09:46:29.420 [flink-akka.actor.default-dispatcher-6] INFO  a.r.Remoting akka.remote.Remoting - Starting remoting
+09:46:29.560 [flink-akka.actor.default-dispatcher-3] INFO  a.r.Remoting akka.remote.Remoting - Remoting started; listening on addresses :[akka.tcp://flink@ip-172-31-34-147.us-east-2.compute.internal:34297]
+09:46:29.609 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Actor system started at akka.tcp://flink@ip-172-31-34-147.us-east-2.compute.internal:34297
+09:46:29.610 [Thread-1] INFO  o.a.f.c.p.StandaloneClusterClient  - Submitting job with JobID: c6e25d6f56489ff9aca3b0546c3bb86f. Waiting for job completion.
+Submitting job with JobID: c6e25d6f56489ff9aca3b0546c3bb86f. Waiting for job completion.
+09:46:29.626 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Disconnect from JobManager null.
+09:46:29.642 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Received SubmitJobAndWait(JobGraph(jobId: c6e25d6f56489ff9aca3b0546c3bb86f)) but there is no connection to a JobManager yet.
+09:46:29.650 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Received job Flink Streaming Job (c6e25d6f56489ff9aca3b0546c3bb86f).
+09:46:29.846 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Connect to JobManager Actor[akka.tcp://flink@172.31.34.147:6123/user/jobmanager#1856532311].
+09:46:29.849 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Connected to JobManager at Actor[akka.tcp://flink@172.31.34.147:6123/user/jobmanager#1856532311] with leader session id 00000000-0000-0000-0000-000000000000.
+Connected to JobManager at Actor[akka.tcp://flink@172.31.34.147:6123/user/jobmanager#1856532311] with leader session id 00000000-0000-0000-0000-000000000000.
+09:46:29.849 [flink-akka.actor.default-dispatcher-3] INFO  o.a.f.r.c.JobSubmissionClientActor  - Sending message to JobManager akka.tcp://flink@172.31.34.147:6123/user/jobmanager to submit job Flink Streaming Job (c6e25d6f56489ff9aca3b0546c3bb86f) and wait for progress
+09:46:29.859 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Upload jar files to job manager akka.tcp://flink@172.31.34.147:6123/user/jobmanager.
+09:46:31.833 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Submit job to the job manager akka.tcp://flink@172.31.34.147:6123/user/jobmanager.
+09:46:32.027 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - Job c6e25d6f56489ff9aca3b0546c3bb86f was successfully submitted to the JobManager akka://flink/deadLetters.
+09:46:32.038 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Job execution switched to status RUNNING.
+02/20/2018 09:46:32	Job execution switched to status RUNNING.
+09:46:32.052 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(1/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(1/10) switched to SCHEDULED 
+09:46:32.058 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(2/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(2/10) switched to SCHEDULED 
+09:46:32.062 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(3/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(3/10) switched to SCHEDULED 
+09:46:32.066 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(4/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(4/10) switched to SCHEDULED 
+09:46:32.071 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(5/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(5/10) switched to SCHEDULED 
+09:46:32.074 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(6/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(6/10) switched to SCHEDULED 
+09:46:32.078 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(7/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(7/10) switched to SCHEDULED 
+09:46:32.085 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(8/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(8/10) switched to SCHEDULED 
+09:46:32.087 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(9/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(9/10) switched to SCHEDULED 
+09:46:32.091 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(10/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Source: Custom Source(10/10) switched to SCHEDULED 
+09:46:32.106 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(1/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(1/10) switched to SCHEDULED 
+09:46:32.110 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(2/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(2/10) switched to SCHEDULED 
+09:46:32.118 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(3/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(3/10) switched to SCHEDULED 
+09:46:32.121 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(4/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(4/10) switched to SCHEDULED 
+09:46:32.123 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(5/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(5/10) switched to SCHEDULED 
+09:46:32.133 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(6/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(6/10) switched to SCHEDULED 
+09:46:32.142 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(7/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(7/10) switched to SCHEDULED 
+09:46:32.144 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(8/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(8/10) switched to SCHEDULED 
+09:46:32.145 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(9/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(9/10) switched to SCHEDULED 
+09:46:32.145 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(10/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Flat Map(10/10) switched to SCHEDULED 
+09:46:32.149 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(1/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(1/10) switched to SCHEDULED 
+09:46:32.150 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(2/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(2/10) switched to SCHEDULED 
+09:46:32.151 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(3/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(3/10) switched to SCHEDULED 
+09:46:32.165 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(4/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(4/10) switched to SCHEDULED 
+09:46:32.172 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(5/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(5/10) switched to SCHEDULED 
+09:46:32.176 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(6/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(6/10) switched to SCHEDULED 
+09:46:32.181 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(7/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(7/10) switched to SCHEDULED 
+09:46:32.184 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(8/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(8/10) switched to SCHEDULED 
+09:46:32.185 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(9/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(9/10) switched to SCHEDULED 
+09:46:32.185 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(10/10) switched to SCHEDULED 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(10/10) switched to SCHEDULED 
+09:46:32.185 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(1/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(1/10) switched to DEPLOYING 
+09:46:32.185 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(2/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(2/10) switched to DEPLOYING 
+09:46:32.187 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(3/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(3/10) switched to DEPLOYING 
+09:46:32.187 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(4/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(4/10) switched to DEPLOYING 
+09:46:32.188 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(5/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(5/10) switched to DEPLOYING 
+09:46:32.203 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(6/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(6/10) switched to DEPLOYING 
+09:46:32.205 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(7/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(7/10) switched to DEPLOYING 
+09:46:32.207 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(8/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(8/10) switched to DEPLOYING 
+09:46:32.207 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(9/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(9/10) switched to DEPLOYING 
+09:46:32.208 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Source: Custom Source(10/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Source: Custom Source(10/10) switched to DEPLOYING 
+09:46:32.208 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(1/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(1/10) switched to DEPLOYING 
+09:46:32.209 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(2/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(2/10) switched to DEPLOYING 
+09:46:32.230 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(3/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(3/10) switched to DEPLOYING 
+09:46:32.237 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(4/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(4/10) switched to DEPLOYING 
+09:46:32.250 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(5/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(5/10) switched to DEPLOYING 
+09:46:32.254 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(6/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(6/10) switched to DEPLOYING 
+09:46:32.255 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(7/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(7/10) switched to DEPLOYING 
+09:46:32.267 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(8/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(8/10) switched to DEPLOYING 
+09:46:32.268 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(9/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(9/10) switched to DEPLOYING 
+09:46:32.275 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Flat Map(10/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Flat Map(10/10) switched to DEPLOYING 
+09:46:32.279 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(1/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(1/10) switched to DEPLOYING 
+09:46:32.282 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(2/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(2/10) switched to DEPLOYING 
+09:46:32.285 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(3/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(3/10) switched to DEPLOYING 
+09:46:32.285 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(4/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(4/10) switched to DEPLOYING 
+09:46:32.285 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(5/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(5/10) switched to DEPLOYING 
+09:46:32.285 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(6/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(6/10) switched to DEPLOYING 
+09:46:32.286 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(7/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(7/10) switched to DEPLOYING 
+09:46:32.287 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(8/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(8/10) switched to DEPLOYING 
+09:46:32.288 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(9/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(9/10) switched to DEPLOYING 
+09:46:32.296 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(10/10) switched to DEPLOYING 
+02/20/2018 09:46:32	Process -> Process -> Sink: Unnamed(10/10) switched to DEPLOYING 
+09:46:35.344 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Source: Custom Source(1/10) switched to RUNNING 
+02/20/2018 09:46:35	Source: Custom Source(1/10) switched to RUNNING 
+09:46:35.355 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Process -> Process -> Sink: Unnamed(1/10) switched to RUNNING 
+02/20/2018 09:46:35	Process -> Process -> Sink: Unnamed(1/10) switched to RUNNING 
+09:46:35.359 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Flat Map(1/10) switched to RUNNING 
+02/20/2018 09:46:35	Flat Map(1/10) switched to RUNNING 
+09:46:35.663 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.45.197:41246
+09:46:35.663 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.45.197:41246
+09:46:35.745 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Source: Custom Source(1/10) switched to FINISHED 
+02/20/2018 09:46:35	Source: Custom Source(1/10) switched to FINISHED 
+09:46:35.855 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Flat Map(5/10) switched to RUNNING 
+02/20/2018 09:46:35	Flat Map(5/10) switched to RUNNING 
+09:46:35.858 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Process -> Process -> Sink: Unnamed(5/10) switched to RUNNING 
+02/20/2018 09:46:35	Process -> Process -> Sink: Unnamed(5/10) switched to RUNNING 
+09:46:35.860 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Source: Custom Source(5/10) switched to RUNNING 
+02/20/2018 09:46:35	Source: Custom Source(5/10) switched to RUNNING 
+09:46:35.884 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Flat Map(9/10) switched to RUNNING 
+02/20/2018 09:46:35	Flat Map(9/10) switched to RUNNING 
+09:46:35.885 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Process -> Process -> Sink: Unnamed(9/10) switched to RUNNING 
+02/20/2018 09:46:35	Process -> Process -> Sink: Unnamed(9/10) switched to RUNNING 
+09:46:35.888 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:35	Source: Custom Source(9/10) switched to RUNNING 
+02/20/2018 09:46:35	Source: Custom Source(9/10) switched to RUNNING 
+09:46:36.181 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.33.155:53026
+09:46:36.182 [Server] INFO  c.s.f.e.b.BenchStand  - Accepting connection: /172.31.33.155:53026
+09:46:36.187 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.44.83:35992
+09:46:36.187 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.44.83:35992
+09:46:36.299 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:36	Source: Custom Source(9/10) switched to FINISHED 
+02/20/2018 09:46:36	Source: Custom Source(9/10) switched to FINISHED 
+[GC (Allocation Failure) [DefNew: 136576K->17024K(153600K), 0.0399955 secs] 151838K->43462K(494976K), 0.0400457 secs] [Times: user=0.02 sys=0.02, real=0.04 secs] 
+09:46:37.641 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Flat Map(6/10) switched to RUNNING 
+02/20/2018 09:46:37	Flat Map(6/10) switched to RUNNING 
+09:46:37.646 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Process -> Process -> Sink: Unnamed(6/10) switched to RUNNING 
+02/20/2018 09:46:37	Process -> Process -> Sink: Unnamed(6/10) switched to RUNNING 
+09:46:37.647 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Source: Custom Source(6/10) switched to RUNNING 
+02/20/2018 09:46:37	Source: Custom Source(6/10) switched to RUNNING 
+[GC (Allocation Failure) [DefNew: 153600K->17023K(153600K), 0.0497921 secs] 180038K->70797K(494976K), 0.0498324 secs] [Times: user=0.01 sys=0.02, real=0.04 secs] 
+09:46:37.912 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Process -> Process -> Sink: Unnamed(10/10) switched to RUNNING 
+02/20/2018 09:46:37	Process -> Process -> Sink: Unnamed(10/10) switched to RUNNING 
+09:46:37.919 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Flat Map(10/10) switched to RUNNING 
+02/20/2018 09:46:37	Flat Map(10/10) switched to RUNNING 
+09:46:37.919 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Source: Custom Source(10/10) switched to RUNNING 
+02/20/2018 09:46:37	Source: Custom Source(10/10) switched to RUNNING 
+09:46:37.962 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.34.169:35610
+09:46:37.962 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.34.169:35610
+09:46:37.985 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Process -> Process -> Sink: Unnamed(8/10) switched to RUNNING 
+02/20/2018 09:46:37	Process -> Process -> Sink: Unnamed(8/10) switched to RUNNING 
+09:46:37.991 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Flat Map(8/10) switched to RUNNING 
+02/20/2018 09:46:37	Flat Map(8/10) switched to RUNNING 
+09:46:37.991 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:37	Source: Custom Source(8/10) switched to RUNNING 
+02/20/2018 09:46:37	Source: Custom Source(8/10) switched to RUNNING 
+09:46:38.082 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(6/10) switched to FINISHED 
+02/20/2018 09:46:38	Source: Custom Source(6/10) switched to FINISHED 
+09:46:38.163 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(2/10) switched to RUNNING 
+02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(2/10) switched to RUNNING 
+09:46:38.164 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Flat Map(2/10) switched to RUNNING 
+02/20/2018 09:46:38	Flat Map(2/10) switched to RUNNING 
+09:46:38.168 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(2/10) switched to RUNNING 
+02/20/2018 09:46:38	Source: Custom Source(2/10) switched to RUNNING 
+09:46:38.168 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(7/10) switched to RUNNING 
+02/20/2018 09:46:38	Source: Custom Source(7/10) switched to RUNNING 
+09:46:38.168 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Flat Map(7/10) switched to RUNNING 
+02/20/2018 09:46:38	Flat Map(7/10) switched to RUNNING 
+09:46:38.173 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(7/10) switched to RUNNING 
+02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(7/10) switched to RUNNING 
+09:46:38.204 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(4/10) switched to RUNNING 
+02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(4/10) switched to RUNNING 
+09:46:38.207 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Flat Map(4/10) switched to RUNNING 
+02/20/2018 09:46:38	Flat Map(4/10) switched to RUNNING 
+09:46:38.207 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(4/10) switched to RUNNING 
+02/20/2018 09:46:38	Source: Custom Source(4/10) switched to RUNNING 
+09:46:38.254 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(3/10) switched to RUNNING 
+02/20/2018 09:46:38	Process -> Process -> Sink: Unnamed(3/10) switched to RUNNING 
+09:46:38.254 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Flat Map(3/10) switched to RUNNING 
+02/20/2018 09:46:38	Flat Map(3/10) switched to RUNNING 
+09:46:38.254 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(3/10) switched to RUNNING 
+02/20/2018 09:46:38	Source: Custom Source(3/10) switched to RUNNING 
+09:46:38.265 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.47.83:43720
+09:46:38.265 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.47.83:43720
+09:46:38.281 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.35.79:40192
+09:46:38.281 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.35.79:40192
+09:46:38.353 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(10/10) switched to FINISHED 
+02/20/2018 09:46:38	Source: Custom Source(10/10) switched to FINISHED 
+09:46:38.356 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(8/10) switched to FINISHED 
+02/20/2018 09:46:38	Source: Custom Source(8/10) switched to FINISHED 
+09:46:38.495 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.37.101:52064
+09:46:38.495 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.37.101:52064
+09:46:38.505 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.39.64:53520
+09:46:38.505 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.39.64:53520
+09:46:38.552 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.42.36:36306
+09:46:38.552 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.42.36:36306
+09:46:38.561 [Server] INFO  c.s.f.e.b.BenchStand  - There is new connection: /172.31.47.100:34308
+09:46:38.561 [Server] INFO  c.s.f.e.b.BenchStand  - Closing connection /172.31.47.100:34308
+09:46:38.585 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(7/10) switched to FINISHED 
+02/20/2018 09:46:38	Source: Custom Source(7/10) switched to FINISHED 
+09:46:38.603 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(2/10) switched to FINISHED 
+02/20/2018 09:46:38	Source: Custom Source(2/10) switched to FINISHED 
+09:46:38.631 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(4/10) switched to FINISHED 
+02/20/2018 09:46:38	Source: Custom Source(4/10) switched to FINISHED 
+09:46:38.646 [flink-akka.actor.default-dispatcher-4] INFO  o.a.f.r.c.JobSubmissionClientActor  - 02/20/2018 09:46:38	Source: Custom Source(3/10) switched to FINISHED 
+02/20/2018 09:46:38	Source: Custom Source(3/10) switched to FINISHED 
+[GC (Allocation Failure) [DefNew: 153599K->17023K(153600K), 0.0624369 secs] 207373K->103137K(494976K), 0.0624817 secs] [Times: user=0.01 sys=0.02, real=0.06 secs] 
+[GC (Allocation Failure) [DefNew: 153599K->17024K(153600K), 0.0778180 secs] 239713K->131728K(494976K), 0.0778634 secs] [Times: user=0.05 sys=0.02, real=0.08 secs] 
+[GC (Allocation Failure) [DefNew: 153600K->17024K(153600K), 0.0512232 secs] 268304K->159818K(494976K), 0.0512752 secs] [Times: user=0.02 sys=0.02, real=0.05 secs] 
+[GC (Allocation Failure) [DefNew: 153600K->17024K(153600K), 0.0393071 secs] 296394K->187834K(494976K), 0.0393474 secs] [Times: user=0.01 sys=0.03, real=0.04 secs] 
+[GC (Allocation Failure) [DefNew: 153600K->17023K(153600K), 0.0436229 secs] 324410K->216260K(494976K), 0.0436672 secs] [Times: user=0.01 sys=0.03, real=0.04 secs] 
+09:46:40.473 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 0
+09:46:40.532 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 1
+09:46:40.590 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 2
+09:46:40.609 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 3
+09:46:40.700 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 4
+09:46:40.750 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 5
+09:46:40.768 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 6
+09:46:40.774 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 7
+09:46:40.854 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 8
+09:46:40.859 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 9
+09:46:40.965 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 10
+09:46:41.007 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 11
+09:46:41.069 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 12
+09:46:41.105 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 13
+09:46:41.132 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 14
+09:46:41.144 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 15
+09:46:41.164 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 16
+09:46:41.223 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 17
+09:46:41.234 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 18
+09:46:41.250 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 19
+09:46:41.331 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 20
+09:46:41.336 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 21
+09:46:41.359 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 22
+09:46:41.389 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 23
+09:46:41.394 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 24
+09:46:41.431 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 25
+09:46:41.487 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 26
+09:46:41.507 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 27
+09:46:41.579 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 28
+09:46:41.605 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 29
+09:46:41.629 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 30
+09:46:41.727 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 31
+09:46:41.732 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 32
+09:46:41.770 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 33
+09:46:41.779 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 34
+09:46:41.817 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 35
+09:46:41.855 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 36
+09:46:41.916 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 37
+09:46:41.918 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 38
+09:46:41.936 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 10000/4965692
+09:46:41.947 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 39
+09:46:42.057 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 40
+09:46:42.074 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 41
+09:46:42.213 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 42
+09:46:42.237 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 43
+09:46:42.277 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 20000/4965692
+09:46:42.294 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 44
+09:46:42.311 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 45
+09:46:42.323 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 46
+09:46:42.343 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 47
+09:46:42.378 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 48
+09:46:42.400 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 49
+09:46:42.409 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 50
+09:46:42.457 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 51
+09:46:42.527 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 52
+09:46:42.532 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 53
+09:46:42.547 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 54
+09:46:42.575 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 30000/4965692
+09:46:42.599 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 55
+09:46:42.613 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 56
+09:46:42.629 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 57
+09:46:42.684 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 58
+09:46:42.741 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 59
+09:46:42.747 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 60
+09:46:42.765 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 61
+09:46:42.791 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 62
+09:46:42.855 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 63
+09:46:42.869 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 64
+09:46:42.924 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 65
+09:46:42.960 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 66
+09:46:43.074 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 67
+09:46:43.118 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 68
+09:46:43.179 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 69
+09:46:43.202 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 70
+09:46:43.223 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 71
+09:46:43.253 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 72
+09:46:43.292 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 73
+09:46:43.306 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 74
+09:46:43.355 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 75
+09:46:43.356 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 76
+09:46:43.379 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 77
+09:46:43.388 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 40000/4965692
+09:46:43.526 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 78
+09:46:43.553 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 79
+09:46:43.574 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 80
+09:46:43.595 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 81
+09:46:43.605 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 82
+09:46:43.635 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 83
+09:46:43.674 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 84
+09:46:43.695 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 85
+09:46:43.925 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 86
+09:46:43.996 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 87
+09:46:44.120 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 88
+09:46:44.195 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 89
+09:46:44.212 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 90
+09:46:44.253 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 91
+09:46:44.270 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 50000/4965692
+09:46:44.321 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 92
+09:46:44.326 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 93
+09:46:44.336 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 94
+09:46:44.363 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 95
+09:46:44.422 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 96
+09:46:44.485 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 97
+09:46:44.546 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 98
+09:46:44.556 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 99
+09:46:44.564 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 100
+09:46:44.579 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 101
+09:46:44.628 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 60000/4965692
+09:46:44.666 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 102
+09:46:44.687 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 103
+09:46:44.781 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 104
+09:46:44.783 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 105
+09:46:44.803 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 106
+09:46:44.823 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 107
+09:46:44.845 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 108
+09:46:44.903 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 109
+09:46:44.930 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 110
+09:46:44.945 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 111
+09:46:44.972 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 112
+09:46:44.980 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 113
+09:46:44.986 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 114
+09:46:45.004 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 115
+09:46:45.064 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 116
+09:46:45.117 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 117
+09:46:45.133 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 118
+09:46:45.152 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 119
+09:46:45.188 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 120
+09:46:45.250 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 70000/4965692
+09:46:45.300 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 121
+09:46:45.330 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 122
+09:46:45.350 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 123
+09:46:45.387 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 124
+09:46:45.433 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 125
+09:46:45.452 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 126
+09:46:45.493 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 127
+09:46:45.557 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 128
+09:46:45.586 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 129
+09:46:45.589 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 130
+09:46:45.630 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 131
+09:46:45.663 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 132
+09:46:45.678 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 133
+09:46:45.714 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 134
+09:46:45.719 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 135
+09:46:45.745 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 136
+09:46:45.834 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 137
+09:46:45.841 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 138
+09:46:45.902 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 139
+09:46:45.954 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 140
+09:46:45.972 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 141
+09:46:45.980 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 142
+09:46:46.030 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 143
+09:46:46.064 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 144
+09:46:46.069 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 145
+09:46:46.194 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 146
+09:46:46.202 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 147
+09:46:46.208 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 80000/4965692
+09:46:46.227 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 148
+09:46:46.227 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 149
+09:46:46.278 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 150
+09:46:46.286 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 151
+09:46:46.322 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 152
+09:46:46.465 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 153
+09:46:46.508 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 154
+09:46:46.632 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 155
+09:46:46.703 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 156
+09:46:46.761 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 157
+09:46:46.814 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 158
+09:46:46.873 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 159
+09:46:47.107 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 160
+09:46:47.167 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 161
+09:46:47.178 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 162
+09:46:47.187 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 163
+09:46:47.189 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 164
+09:46:47.197 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 165
+09:46:47.316 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 166
+09:46:47.428 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 167
+09:46:47.437 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 168
+09:46:47.510 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 169
+09:46:47.536 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 170
+09:46:47.547 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 171
+09:46:47.635 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 172
+09:46:47.697 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 173
+09:46:47.699 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 174
+09:46:47.712 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 175
+09:46:47.718 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 90000/4965692
+09:46:47.804 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 176
+09:46:47.806 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 177
+09:46:47.823 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 178
+09:46:47.841 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 179
+09:46:47.883 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 180
+09:46:47.890 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 181
+09:46:47.899 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 182
+09:46:48.011 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 183
+09:46:48.033 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 184
+09:46:48.091 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 185
+09:46:48.104 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 186
+09:46:48.107 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 187
+09:46:48.135 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 188
+09:46:48.182 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 189
+09:46:48.192 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 190
+09:46:48.199 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 191
+09:46:48.214 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 192
+09:46:48.258 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 193
+09:46:48.306 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 194
+09:46:48.319 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 195
+09:46:48.345 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 196
+09:46:48.347 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 197
+09:46:48.357 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 198
+09:46:48.368 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 100000/4965692
+09:46:48.400 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 199
+09:46:48.416 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 200
+09:46:48.436 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 201
+09:46:48.456 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 202
+09:46:48.459 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 203
+09:46:48.514 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 204
+09:46:48.568 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 205
+09:46:48.585 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 206
+09:46:48.646 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 207
+09:46:48.687 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 208
+09:46:48.696 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 209
+09:46:48.713 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 210
+09:46:48.831 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 211
+09:46:48.871 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 212
+09:46:48.934 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 110000/4965692
+09:46:48.962 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 213
+09:46:49.018 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 214
+09:46:49.031 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 215
+09:46:49.114 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 216
+09:46:49.161 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 217
+09:46:49.370 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 218
+09:46:49.455 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 219
+09:46:49.482 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 220
+09:46:49.539 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 221
+09:46:49.601 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 222
+09:46:49.605 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 223
+09:46:49.610 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 224
+09:46:49.706 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 225
+09:46:49.713 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 226
+09:46:49.736 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 227
+09:46:49.760 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 228
+09:46:49.775 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 229
+09:46:49.798 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 230
+09:46:49.848 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 231
+09:46:49.866 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 232
+09:46:49.907 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 233
+09:46:49.929 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 234
+09:46:49.983 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 235
+09:46:50.058 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 236
+09:46:50.194 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 237
+09:46:50.200 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 238
+09:46:50.205 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 239
+09:46:50.264 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 240
+09:46:50.405 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 241
+09:46:50.495 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 242
+09:46:50.501 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 243
+09:46:50.542 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 244
+09:46:50.548 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 245
+09:46:50.599 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 246
+09:46:50.647 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 247
+09:46:50.699 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 248
+09:46:50.701 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 249
+09:46:50.717 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 250
+09:46:50.766 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 120000/4965692
+09:46:50.779 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 251
+09:46:50.783 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 252
+09:46:50.831 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 253
+09:46:50.905 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 254
+09:46:50.916 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 255
+09:46:50.965 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 256
+09:46:51.002 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 257
+09:46:51.010 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 258
+09:46:51.050 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 259
+09:46:51.087 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 260
+09:46:51.132 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 261
+09:46:51.159 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 262
+09:46:51.163 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 263
+09:46:51.178 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 264
+09:46:51.189 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 265
+09:46:51.191 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 266
+09:46:51.205 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 267
+09:46:51.246 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 268
+09:46:51.267 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 269
+09:46:51.283 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 270
+09:46:51.299 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 271
+09:46:51.301 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 272
+09:46:51.336 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 273
+09:46:51.359 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 130000/4965692
+09:46:51.397 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 274
+09:46:51.537 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 275
+09:46:51.604 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 276
+09:46:51.616 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 277
+09:46:51.662 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 278
+09:46:51.669 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 279
+09:46:51.704 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 280
+09:46:51.749 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 281
+09:46:51.800 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 282
+09:46:51.823 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 283
+09:46:51.872 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 284
+09:46:51.900 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 285
+09:46:51.970 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 286
+09:46:52.009 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 287
+09:46:52.099 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 288
+09:46:52.102 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 289
+09:46:52.112 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 290
+09:46:52.145 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 291
+09:46:52.152 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 292
+09:46:52.265 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 293
+09:46:52.304 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 294
+09:46:52.320 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 295
+09:46:52.327 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 296
+09:46:52.335 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 140000/4965692
+09:46:52.367 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 297
+09:46:52.401 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 298
+09:46:52.405 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 299
+09:46:52.470 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 300
+09:46:52.502 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 301
+09:46:52.573 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 302
+09:46:52.714 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 303
+09:46:52.727 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 304
+09:46:52.742 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 305
+09:46:52.768 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 306
+09:46:52.791 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 307
+09:46:52.812 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 308
+09:46:52.892 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 309
+09:46:52.914 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 310
+09:46:52.957 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 311
+09:46:53.068 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 312
+09:46:53.126 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 313
+09:46:53.128 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 314
+09:46:53.131 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 315
+09:46:53.260 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 316
+09:46:53.276 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 317
+09:46:53.277 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 318
+09:46:53.291 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 319
+09:46:53.323 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 150000/4965692
+09:46:53.404 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 320
+09:46:53.404 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 321
+09:46:53.528 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 322
+09:46:53.540 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 323
+09:46:53.592 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 324
+09:46:53.622 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 325
+09:46:53.623 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 326
+09:46:53.696 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 327
+09:46:53.726 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 328
+09:46:53.759 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 329
+09:46:53.764 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 330
+09:46:53.800 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 331
+09:46:53.896 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 332
+09:46:53.900 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 333
+09:46:53.902 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 334
+09:46:53.951 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 335
+09:46:54.139 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 336
+09:46:54.160 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 337
+09:46:54.252 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 338
+09:46:54.290 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 339
+09:46:54.302 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 340
+09:46:54.367 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 341
+09:46:54.377 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 342
+09:46:54.380 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 343
+09:46:54.417 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 344
+09:46:54.639 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 345
+09:46:54.651 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 346
+09:46:54.653 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 347
+09:46:54.730 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 348
+09:46:54.775 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 160000/4965692
+09:46:54.815 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 349
+09:46:54.856 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 350
+09:46:54.905 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 351
+09:46:54.957 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 352
+09:46:54.958 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 353
+09:46:55.002 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 354
+09:46:55.003 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 355
+09:46:55.029 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 356
+09:46:55.155 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 357
+09:46:55.194 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 358
+09:46:55.210 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 359
+09:46:55.264 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 360
+09:46:55.324 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 361
+09:46:55.428 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 362
+09:46:55.494 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 363
+09:46:55.507 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 364
+09:46:55.514 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 170000/4965692
+09:46:55.590 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 365
+09:46:55.626 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 366
+09:46:55.632 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 367
+09:46:55.634 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 368
+09:46:55.642 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 369
+09:46:55.683 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 370
+09:46:55.694 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 371
+09:46:55.708 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 372
+09:46:55.720 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 373
+09:46:55.736 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 374
+09:46:55.761 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 375
+09:46:55.770 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 376
+09:46:55.869 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 377
+09:46:55.888 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 378
+09:46:55.939 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 379
+09:46:55.953 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 380
+09:46:56.033 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 381
+09:46:56.041 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 382
+09:46:56.046 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 383
+09:46:56.053 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 384
+09:46:56.060 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 385
+09:46:56.062 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 386
+09:46:56.085 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 387
+09:46:56.099 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 388
+09:46:56.150 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 389
+09:46:56.175 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 390
+09:46:56.228 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 391
+09:46:56.410 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 392
+09:46:56.569 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 393
+09:46:56.571 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 394
+09:46:56.595 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 395
+09:46:56.600 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 396
+09:46:56.617 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 180000/4965692
+09:46:56.688 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 397
+09:46:56.700 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 398
+09:46:56.780 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 399
+09:46:56.838 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 400
+09:46:56.848 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 401
+09:46:56.858 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 402
+09:46:56.881 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 403
+09:46:56.946 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 404
+09:46:56.961 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 405
+09:46:57.027 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 406
+09:46:57.042 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 407
+09:46:57.046 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 408
+09:46:57.074 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 409
+09:46:57.104 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 410
+09:46:57.127 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 411
+09:46:57.221 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 412
+09:46:57.275 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 413
+09:46:57.405 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 414
+09:46:57.423 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 415
+09:46:57.482 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 416
+09:46:57.509 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 190000/4965692
+09:46:57.599 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 417
+09:46:57.602 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 418
+09:46:57.697 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 419
+09:46:57.724 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 420
+09:46:57.741 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 421
+09:46:57.841 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 422
+09:46:57.845 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 423
+09:46:57.916 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 424
+09:46:57.922 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 425
+09:46:58.011 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 426
+09:46:58.024 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 200000/4965692
+09:46:58.078 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 427
+09:46:58.173 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 428
+09:46:58.238 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 429
+09:46:58.243 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 430
+09:46:58.344 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 431
+09:46:58.354 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 432
+09:46:58.456 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 433
+09:46:58.509 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 434
+09:46:58.558 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 435
+09:46:58.576 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 436
+09:46:58.601 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 437
+09:46:58.630 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 438
+09:46:58.645 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 439
+09:46:58.669 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 440
+09:46:58.671 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 441
+09:46:58.702 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 442
+09:46:58.785 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 443
+09:46:58.899 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 444
+09:46:58.955 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 445
+09:46:58.956 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 446
+09:46:59.013 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 447
+09:46:59.078 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 448
+09:46:59.101 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 449
+09:46:59.124 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 450
+09:46:59.128 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 451
+09:46:59.161 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 452
+09:46:59.204 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 453
+09:46:59.222 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 454
+09:46:59.303 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 455
+09:46:59.390 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 456
+09:46:59.483 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 457
+09:46:59.515 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 458
+09:46:59.550 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 459
+09:46:59.552 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 460
+09:46:59.582 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 461
+09:46:59.589 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 462
+09:46:59.603 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 463
+09:46:59.659 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 464
+09:46:59.680 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 465
+09:46:59.735 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 210000/4965692
+09:46:59.738 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 466
+09:46:59.746 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 467
+09:46:59.765 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 468
+09:46:59.837 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 469
+09:46:59.854 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 470
+09:46:59.862 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 471
+09:46:59.900 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 472
+09:46:59.912 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 473
+09:46:59.941 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 474
+09:46:59.975 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 475
+09:47:00.014 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 476
+09:47:00.023 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 477
+09:47:00.031 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 478
+09:47:00.044 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 220000/4965692
+09:47:00.050 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 479
+09:47:00.057 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 480
+09:47:00.108 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 481
+09:47:00.202 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 482
+09:47:00.308 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 483
+09:47:00.318 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 484
+09:47:00.348 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 485
+09:47:00.353 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 486
+09:47:00.391 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 487
+09:47:00.464 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 488
+09:47:00.482 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 489
+09:47:00.570 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 490
+09:47:00.576 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 491
+09:47:00.622 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 492
+09:47:00.627 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 493
+[GC (Allocation Failure) [DefNew: 153599K->717K(153600K), 0.0211419 secs] 352836K->216973K(494976K), 0.0211793 secs] [Times: user=0.01 sys=0.00, real=0.02 secs] 
+09:47:00.714 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 494
+09:47:00.744 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 230000/4965692
+09:47:00.758 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 495
+09:47:00.811 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 496
+09:47:00.835 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 497
+09:47:00.858 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 498
+09:47:00.859 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 499
+09:47:00.913 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 500
+09:47:00.920 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 501
+09:47:00.988 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 502
+09:47:01.063 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 503
+09:47:01.108 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 504
+09:47:01.141 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 505
+09:47:01.184 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 240000/4965692
+09:47:01.200 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 506
+09:47:01.262 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 507
+09:47:01.298 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 508
+09:47:01.397 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 509
+09:47:01.410 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 510
+09:47:01.436 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 511
+09:47:01.543 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 512
+09:47:01.578 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 513
+09:47:01.580 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 514
+09:47:01.623 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 515
+09:47:01.687 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 516
+09:47:01.712 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 517
+09:47:01.744 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 518
+09:47:01.774 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 519
+09:47:01.818 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 520
+09:47:01.818 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 521
+09:47:01.828 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 522
+09:47:01.906 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 523
+09:47:01.910 [Server] INFO  c.s.f.e.b.BenchStand  - Progress: 250000/4965692
+09:47:01.992 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 524
+09:47:02.081 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 525
+09:47:02.085 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 526
+09:47:02.147 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 527
+09:47:02.188 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 528
+09:47:02.246 [Thread-0] INFO  c.s.f.e.b.BenchStand  - Sending: 529
