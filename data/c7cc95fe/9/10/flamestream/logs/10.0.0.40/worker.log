@@ -1,0 +1,153 @@
+16:05:20,750 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:05:20,751 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+16:05:20,751 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/opt/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+16:05:20,752 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+16:05:20,752 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/opt/flamestream/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+16:05:20,752 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/opt/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+16:05:20,787 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6a2bcfcb - URL [jar:file:/opt/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+16:05:20,868 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+16:05:20,868 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:05:20,875 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+16:05:20,883 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:05:20,970 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:05:20,978 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+16:05:21,004 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1307096070 - No compression will be used
+16:05:21,005 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1307096070 - Will use the pattern /tmp/application_%d{yyyy-MM-dd}.%i.log for the active file
+16:05:21,008 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c756e4d - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/application_%d{yyyy-MM-dd}.%i.log'.
+16:05:21,008 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c756e4d - Roll-over at midnight.
+16:05:21,013 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c756e4d - Setting initial period to Sun Mar 10 16:05:21 UTC 2019
+16:05:21,013 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c756e4d - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:05:21,013 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c756e4d - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:05:21,017 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:05:21,022 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/application.log
+16:05:21,022 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/application.log]
+16:05:21,023 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:05:21,023 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+16:05:21,023 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+16:05:21,023 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:05:21,024 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7c0e2abd - Registering current configuration as safe fallback point
+
+16:05:21.028 [main] INFO  c.s.f.r.WorkerApplication  - Starting worker with workerConfig 'WorkerConfig{id='10.0.0.40', localAddress=10.0.0.40:5412, zkString='10.0.0.62:2181', snapshotPath='/opt/flamestream/data', guarantees=AT_MOST_ONCE, maxElementsInGraph=100, millisBetweenCommits=1000, defaultMinimalTime=0, distributedAcker=false}'
+16:05:22.019 [worker-akka.actor.default-dispatcher-3] INFO  a.e.s.Slf4jLogger  - Slf4jLogger started
+Ama winner
+Ama winner
+16:05:22.302 [worker-akka.actor.default-dispatcher-3] INFO  a.r.a.a.ArteryAeronUdpTransport(akka://worker) akka.remote.artery.aeron.ArteryAeronUdpTransport(akka://worker) - Started embedded media driver in directory [/dev/shm/aeron-10.0.0.40]
+2019-03-10T16:05:22.318+0000: 1.779: [GC (Allocation Failure) 2019-03-10T16:05:22.318+0000: 1.779: [DefNew: 136576K->14952K(153600K), 0.0149726 secs] 136576K->14952K(494976K), 0.0150240 secs] [Times: user=0.01 sys=0.01, real=0.02 secs] 
+2019-03-10T16:05:22.398+0000: 1.859: [Full GC (Metadata GC Threshold) 2019-03-10T16:05:22.398+0000: 1.859: [Tenured: 0K->4944K(341376K), 0.0200905 secs] 23966K->4944K(494976K), [Metaspace: 20758K->20758K(1067008K)], 0.0201681 secs] [Times: user=0.02 sys=0.00, real=0.02 secs] 
+16:05:22.532 [worker-akka.actor.default-dispatcher-3] INFO  a.r.a.a.ArteryAeronUdpTransport(akka://worker) akka.remote.artery.aeron.ArteryAeronUdpTransport(akka://worker) - Remoting started with transport [Artery aeron-udp]; listening on address [akka://worker@10.0.0.40:5412] with UID [521739337930768125]
+16:05:22.837 [worker-akka.actor.default-dispatcher-2] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Starting...
+16:05:22.944 [worker-akka.actor.default-dispatcher-3] INFO  o.a.c.u.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+16:05:22.994 [worker-akka.actor.default-dispatcher-3] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Starting
+16:05:23.011 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:zookeeper.version=3.4.9-1757313, built on 08/23/2016 06:50 GMT
+16:05:23.013 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:host.name=localhost
+16:05:23.013 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:java.version=1.8.0_191
+16:05:23.015 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+16:05:23.015 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+16:05:23.015 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:java.class.path=lib/commons-cli-1.4.jar:lib/minlog-1.3.0.jar:lib/asm-5.0.4.jar:lib/hadoop-annotations-2.7.3.jar:lib/hadoop-auth-2.7.3.jar:lib/commons-csv-1.4.jar:lib/akka-slf4j_2.11-2.5.15.jar:lib/jersey-core-1.9.jar:lib/lz4-1.3.0.jar:lib/jackson-core-asl-1.9.13.jar:lib/htrace-core-3.1.0-incubating.jar:lib/xz-1.0.jar:lib/commons-httpclient-3.1.jar:lib/asm-3.1.jar:lib/commons-lang3-3.4.jar:lib/scala-java8-compat_2.11-0.7.0.jar:lib/jblas-1.2.4.jar:lib/commons-configuration-1.6.jar:lib/objenesis-2.1.jar:lib/jackson-annotations-2.8.0.jar:lib/jsr305-3.0.0.jar:lib/akka-actor_2.11-2.5.15.jar:lib/curator-client-4.0.1.jar:lib/jersey-server-1.9.jar:lib/jets3t-0.9.0.jar:lib/aeron-client-1.9.3.jar:lib/leveldb-0.7.jar:lib/jetty-6.1.26.jar:lib/stax-api-1.0-2.jar:lib/flamestream-core-1.0-SNAPSHOT.jar:lib/reflectasm-1.07-shaded.jar:lib/apacheds-kerberos-codec-2.0.0-M15.jar:lib/akka-testkit_2.11-2.5.15.jar:lib/api-asn1-api-1.0.0-M20.jar:lib/commons-lang-2.6.jar:lib/commons-beanutils-1.7.0.jar:lib/jackson-xc-1.8.3.jar:lib/jetty-util-6.1.26.jar:lib/curator-recipes-4.0.1.jar:lib/logback-classic-1.2.3.jar:lib/jool-0.9.12.jar:lib/httpcore-4.1.2.jar:lib/kryo-4.0.0.jar:lib/ant-1.8.1.jar:lib/ssl-config-core_2.11-0.2.4.jar:lib/jaxb-impl-2.2.3-1.jar:lib/jersey-json-1.9.jar:lib/commons-compress-1.4.1.jar:lib/leveldbjni-all-1.8.jar:lib/paranamer-2.3.jar:lib/jackson-core-2.8.4.jar:lib/commons-math3-3.6.1.jar:lib/netty-3.10.6.Final.jar:lib/trove4j-3.0.3.jar:lib/jaxb-api-2.2.2.jar:lib/logback-core-1.2.3.jar:lib/snappy-java-1.0.4.1.jar:lib/protobuf-java-2.5.0.jar:lib/flamestream-examples-1.0-SNAPSHOT.jar:lib/commons-codec-1.4.jar:lib/activation-1.1.jar:lib/commons-net-3.1.jar:lib/jackson-mapper-asl-1.9.13.jar:lib/jackson-databind-2.8.4.jar:lib/flamestream-runtime-1.0-SNAPSHOT.jar:lib/jackson-jaxrs-1.8.3.jar:lib/slf4j-api-1.7.24.jar:lib/jline-0.9.94.jar:lib/jedis-2.9.0.jar:lib/jsp-api-2.1.jar:lib/akka-protobuf_2.11-2.5.15.jar:lib/kryonet-2.21.jar:lib/akka-kryo-serialization_2.11-0.5.0.jar:lib/config-1.3.1.jar:lib/ant-launcher-1.8.1.jar:lib/commons-logging-1.2.jar:lib/testng-6.10.jar:lib/agrona-0.9.18.jar:lib/leveldb-api-0.7.jar:lib/reactive-streams-1.0.2.jar:lib/reflectasm-1.11.3.jar:lib/jcommander-1.48.jar:lib/commons-1.1.jar:lib/commons-digester-1.8.jar:lib/minlog-1.2.jar:lib/java-xmlbuilder-0.4.jar:lib/jettison-1.1.jar:lib/akka-stream_2.11-2.5.15.jar:lib/gson-2.2.4.jar:lib/jdk.tools-1.8.jar:lib/scala-parser-combinators_2.11-1.1.1.jar:lib/zookeeper-3.4.9.jar:lib/commons-beanutils-core-1.8.0.jar:lib/commons-math3-3.1.1.jar:lib/servlet-api-2.5.jar:lib/commons-pool2-2.4.2.jar:lib/apacheds-i18n-2.0.0-M15.jar:lib/commons-io-2.4.jar:lib/commons-codec-1.6.jar:lib/akka-remote_2.11-2.5.15.jar:lib/jdom-2.0.2.jar:lib/rocksdbjni-5.5.1.jar:lib/api-util-1.0.0-M20.jar:lib/hadoop-common-2.7.3.jar:lib/xmlenc-0.52.jar:lib/guava-21.0.jar:lib/commons-collections-3.2.2.jar:lib/avro-1.7.4.jar:lib/aeron-driver-1.9.3.jar:lib/httpclient-4.1.2.jar:lib/flamestream-core-1.0-SNAPSHOT-tests.jar:lib/annotations-12.0.jar:lib/curator-framework-4.0.1.jar:lib/scala-library-2.11.12.jar:lib/jsch-0.1.42.jar:flamestream-runtime-1.0-SNAPSHOT.jar
+16:05:23.015 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+16:05:23.015 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:java.io.tmpdir=/tmp
+16:05:23.015 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:java.compiler=<NA>
+16:05:23.016 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:os.name=Linux
+16:05:23.017 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:os.arch=amd64
+16:05:23.017 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:os.version=4.4.0-1049-aws
+16:05:23.017 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:user.name=root
+16:05:23.017 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:user.home=/root
+16:05:23.018 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Client environment:user.dir=/opt/flamestream
+16:05:23.020 [worker-akka.actor.default-dispatcher-3] INFO  o.a.z.ZooKeeper  - Initiating client connection, connectString=10.0.0.62:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@7739302b
+16:05:23.054 [worker-akka.actor.default-dispatcher-3-SendThread(10.0.0.62:2181)] INFO  o.a.z.ClientCnxn  - Opening socket connection to server 10.0.0.62/10.0.0.62:2181. Will not attempt to authenticate using SASL (unknown error)
+16:05:23.057 [worker-akka.actor.default-dispatcher-3] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Default schema
+16:05:23.061 [worker-akka.actor.default-dispatcher-3-SendThread(10.0.0.62:2181)] INFO  o.a.z.ClientCnxn  - Socket connection established to 10.0.0.62/10.0.0.62:2181, initiating session
+16:05:23.077 [worker-akka.actor.default-dispatcher-3-SendThread(10.0.0.62:2181)] INFO  o.a.z.ClientCnxn  - Session establishment complete on server 10.0.0.62/10.0.0.62:2181, sessionid = 0x10000e981960006, negotiated timeout = 60000
+16:05:23.087 [worker-akka.actor.default-dispatcher-3-EventThread] INFO  o.a.c.f.s.ConnectionStateManager  - State change: CONNECTED
+16:05:23.091 [worker-akka.actor.default-dispatcher-2] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Initializing rocksDB backend
+16:05:23.790 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher - Starting...
+16:05:46.930 [Curator-PathChildrenCache-2] WARN  o.a.c.u.ZKPaths  - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+16:05:47.043 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$a - Starting...
+2019-03-10T16:05:47.321+0000: 26.782: [GC (Allocation Failure) 2019-03-10T16:05:47.321+0000: 26.782: [DefNew: 136704K->13873K(153728K), 0.0144829 secs] 141648K->18817K(495104K), 0.0145484 secs] [Times: user=0.01 sys=0.00, real=0.02 secs] 
+2019-03-10T16:05:47.765+0000: 27.226: [GC (Allocation Failure) 2019-03-10T16:05:47.765+0000: 27.226: [DefNew: 150577K->2432K(153728K), 0.0079527 secs] 155521K->9746K(495104K), 0.0080088 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-03-10T16:05:47.948+0000: 27.408: [GC (Allocation Failure) 2019-03-10T16:05:47.948+0000: 27.408: [DefNew: 139136K->8796K(153728K), 0.0061616 secs] 146450K->16109K(495104K), 0.0062166 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-03-10T16:05:48.068+0000: 27.529: [GC (Allocation Failure) 2019-03-10T16:05:48.068+0000: 27.529: [DefNew: 145500K->5715K(153728K), 0.0043684 secs] 152813K->15344K(495104K), 0.0044232 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-03-10T16:05:48.148+0000: 27.608: [GC (Allocation Failure) 2019-03-10T16:05:48.148+0000: 27.608: [DefNew: 89008K->5928K(153728K), 0.0028046 secs]2019-03-10T16:05:48.151+0000: 27.611: [Tenured: 9629K->15557K(341376K), 0.0236927 secs] 98637K->15557K(495104K), [Metaspace: 31770K->31770K(1077248K)], 0.0265980 secs] [Times: user=0.02 sys=0.00, real=0.03 secs] 
+2019-03-10T16:05:50.256+0000: 29.716: [GC (Allocation Failure) 2019-03-10T16:05:50.256+0000: 29.716: [DefNew: 136704K->17024K(153728K), 0.0797306 secs] 569707K->457993K(836416K), 0.0797955 secs] [Times: user=0.07 sys=0.01, real=0.08 secs] 
+16:05:50.558 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$a - Stopped
+2019-03-10T16:05:50.699+0000: 30.160: [GC (Allocation Failure) 2019-03-10T16:05:50.699+0000: 30.160: [DefNew: 153728K->17023K(153728K), 0.1146945 secs] 594697K->482254K(836416K), 0.1147654 secs] [Times: user=0.11 sys=0.00, real=0.12 secs] 
+16:05:51.587 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$c/$a - Starting...
+16:05:51.604 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$c - Starting...
+16:05:51.722 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Starting...
+16:05:52.221 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Finishing constructor
+16:05:52.226 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Starting...
+16:05:52.227 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge - Starting...
+16:05:52.228 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph - Starting FlameNode with config 'ClusterConfig{paths={10.0.0.40=akka://worker@10.0.0.40:5412/user/watcher/processing-watcher/graph, 10.0.0.128=akka://worker@10.0.0.128:5412/user/watcher/processing-watcher/graph, 10.0.0.113=akka://worker@10.0.0.113:5412/user/watcher/processing-watcher/graph, 10.0.0.131=akka://worker@10.0.0.131:5412/user/watcher/processing-watcher/graph, 10.0.0.33=akka://worker@10.0.0.33:5412/user/watcher/processing-watcher/graph, 10.0.0.193=akka://worker@10.0.0.193:5412/user/watcher/processing-watcher/graph, 10.0.0.209=akka://worker@10.0.0.209:5412/user/watcher/processing-watcher/graph, 10.0.0.163=akka://worker@10.0.0.163:5412/user/watcher/processing-watcher/graph, 10.0.0.141=akka://worker@10.0.0.141:5412/user/watcher/processing-watcher/graph}, masterLocation='10.0.0.209', hashGroups={10.0.0.40=com.spbsu.flamestream.runtime.config.HashGroup@abd0db84, 10.0.0.128=com.spbsu.flamestream.runtime.config.HashGroup@ec806bc, 10.0.0.113=com.spbsu.flamestream.runtime.config.HashGroup@3a347097, 10.0.0.131=com.spbsu.flamestream.runtime.config.HashGroup@b742b82e, 10.0.0.33=com.spbsu.flamestream.runtime.config.HashGroup@2f33e44d, 10.0.0.193=com.spbsu.flamestream.runtime.config.HashGroup@bd6eb6c2, 10.0.0.209=com.spbsu.flamestream.runtime.config.HashGroup@c01f, 10.0.0.163=com.spbsu.flamestream.runtime.config.HashGroup@ed8b2724, 10.0.0.141=com.spbsu.flamestream.runtime.config.HashGroup@c5711fed}}'
+16:05:52.233 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Requesting ticket for the frontClass tfidfFront@10.0.0.40
+16:05:52.244 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfFront/10.0.0.40-inner - Starting...
+16:05:52.250 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfFront - Starting...
+16:05:52.253 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfRear/10.0.0.40-inner - Starting...
+16:05:52.257 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfRear - Starting...
+16:05:52.579 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfFront/10.0.0.40-inner - Local mediator has been resolved
+16:05:52.593 [worker-akka.actor.default-dispatcher-7] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfRear/10.0.0.40-inner - Local mediator has been resolved
+16:05:52.657 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Received last commit 'LastCommit{globalTime=(0000000, min@min)}'
+16:05:52.700 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Ticket for the frontClass received: FrontTicket{allowedTimestamp=(0000000, tfidfFront@10.0.0.40)}
+16:05:52.729 [worker-akka.actor.default-dispatcher-7] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a/$a - Starting...
+16:05:52.738 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a - Starting...
+16:05:52.745 [worker-akka.actor.default-dispatcher-7] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b/$a - Starting...
+16:05:52.746 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b - Starting...
+16:05:52.757 [worker-akka.actor.default-dispatcher-7] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c/$a - Starting...
+16:05:52.758 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c - Starting...
+16:05:52.787 [worker-akka.actor.default-dispatcher-7] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c - Attached rear to graph (-9223372036854775808, min@min)
+16:05:52.792 [worker-akka.actor.default-dispatcher-7] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d/$a - Starting...
+16:05:52.793 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d - Starting...
+2019-03-10T16:05:56.789+0000: 36.249: [GC (Allocation Failure) 2019-03-10T16:05:56.789+0000: 36.249: [DefNew: 153727K->13936K(153728K), 0.0400897 secs] 618958K->496166K(836416K), 0.0401649 secs] [Times: user=0.02 sys=0.01, real=0.04 secs] 
+2019-03-10T16:05:59.075+0000: 38.535: [GC (Allocation Failure) 2019-03-10T16:05:59.075+0000: 38.535: [DefNew: 150640K->4066K(153728K), 0.0196703 secs] 632870K->492900K(836416K), 0.0197352 secs] [Times: user=0.02 sys=0.00, real=0.02 secs] 
+2019-03-10T16:06:03.177+0000: 42.638: [GC (Allocation Failure) 2019-03-10T16:06:03.177+0000: 42.638: [DefNew: 140770K->7313K(153728K), 0.0125946 secs] 629604K->496147K(836416K), 0.0126737 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+16:06:06.733 [worker-akka.actor.default-dispatcher-2] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://lentaTfIdf@10.0.0.62:5412] having UID [4663819887019021427] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+16:06:13.298 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Stopped
+16:06:13.299 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfRear/10.0.0.40-inner - Stopped
+16:06:13.300 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$c/$a - Stopped
+16:06:13.302 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d/$a - Stopped
+16:06:13.303 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c/$a - Stopped
+16:06:13.304 [worker-akka.actor.default-dispatcher-7] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b/$a - Stopped
+16:06:13.305 [worker-akka.actor.default-dispatcher-13] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a/$a - Stopped
+16:06:13.314 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfRear - Stopped
+16:06:13.314 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$c/$a - Message [com.spbsu.flamestream.runtime.utils.akka.PingActor$InnerPing] from Actor[akka://worker/user/watcher/processing-watcher/$c/$a#871232133] to Actor[akka://worker/user/watcher/processing-watcher/$c/$a#871232133] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://worker/user/watcher/processing-watcher/$c/$a#871232133]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+16:06:13.314 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfFront/10.0.0.40-inner - Stopped
+16:06:13.315 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/tfidfFront - Stopped
+16:06:13.315 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge - Stopped
+16:06:13.316 [worker-akka.actor.default-dispatcher-21] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d - Stopped
+16:06:13.317 [worker-akka.actor.default-dispatcher-21] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c - Stopped
+16:06:13.317 [worker-akka.actor.default-dispatcher-21] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b - Stopped
+16:06:13.317 [worker-akka.actor.default-dispatcher-21] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a - Stopped
+16:06:13.317 [worker-akka.actor.default-dispatcher-21] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$c - Stopped
+16:06:13.317 [worker-akka.actor.default-dispatcher-12] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Stopped
+16:06:13.318 [worker-akka.actor.default-dispatcher-12] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$c/$a - Message [com.spbsu.flamestream.runtime.utils.akka.PingActor$Stop] from Actor[akka://worker/user/watcher/processing-watcher/$c#-447881208] to Actor[akka://worker/user/watcher/processing-watcher/$c/$a#871232133] was not delivered. [2] dead letters encountered. If this is not an expected behavior, then [Actor[akka://worker/user/watcher/processing-watcher/$c/$a#871232133]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+16:06:13.318 [worker-akka.actor.default-dispatcher-12] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph - Stopped
+16:06:13.323 [worker-akka.actor.default-dispatcher-23] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher - Stopped
+16:06:13.323 [Curator-Framework-0] INFO  o.a.c.f.i.CuratorFrameworkImpl  - backgroundOperationsLoop exiting
+16:06:13.332 [worker-akka.actor.default-dispatcher-3-EventThread] INFO  o.a.z.ClientCnxn  - EventThread shut down for session: 0x10000e981960006
+16:06:13.332 [worker-akka.actor.default-dispatcher-23] INFO  o.a.z.ZooKeeper  - Session: 0x10000e981960006 closed
+16:06:13.334 [Curator-PathChildrenCache-0] ERROR o.a.c.f.r.c.PathChildrenCache  - 
+java.lang.IllegalStateException: instance must be started before calling this method
+	at org.apache.curator.shaded.com.google.common.base.Preconditions.checkState(Preconditions.java:444)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:456)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache.refresh(PathChildrenCache.java:521)
+	at org.apache.curator.framework.recipes.cache.RefreshOperation.invoke(RefreshOperation.java:35)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache$9.run(PathChildrenCache.java:786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+16:06:13.335 [worker-akka.actor.default-dispatcher-23] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Stopped
+16:06:13.351 [worker-akka.actor.default-dispatcher-24] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@10.0.0.40:5412/system/remoting-terminator - Shutting down remote daemon.
+16:06:13.352 [worker-akka.actor.default-dispatcher-24] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@10.0.0.40:5412/system/remoting-terminator - Remote daemon shut down; proceeding with flushing remote transports.
+16:06:14.477 [worker-akka.actor.default-dispatcher-21] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@10.0.0.40:5412/system/remoting-terminator - Remoting shut down.
+Heap
+ def new generation   total 153728K, used 95265K [0x00000000c1800000, 0x00000000cbec0000, 0x00000000d6550000)
+  eden space 136704K,  64% used [0x00000000c1800000, 0x00000000c6de4158, 0x00000000c9d80000)
+  from space 17024K,  42% used [0x00000000c9d80000, 0x00000000ca4a4610, 0x00000000cae20000)
+  to   space 17024K,   0% used [0x00000000cae20000, 0x00000000cae20000, 0x00000000cbec0000)
+ tenured generation   total 682688K, used 488834K [0x00000000d6550000, 0x0000000100000000, 0x0000000100000000)
+   the space 682688K,  71% used [0x00000000d6550000, 0x00000000f42b0858, 0x00000000f42b0a00, 0x0000000100000000)
+ Metaspace       used 36809K, capacity 37930K, committed 38016K, reserved 1081344K
+  class space    used 4956K, capacity 5205K, committed 5248K, reserved 1048576K
